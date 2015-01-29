@@ -1,0 +1,817 @@
+29 Jan 2015 | 12:17:26,131 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | Boot sequence starts...
+29 Jan 2015 | 12:17:26,162 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | 
+ _____ _____ _____    ___ __ __    _____ _____ _____ _____ 
+|   __|   __|   __|  |_  |  |  |  | __  |     |     |_   _|
+|__   |   __|__   |  |  _|-   -|  | __ -|  |  |  |  | | |  
+|_____|__|  |_____|  |___|__|__|  |_____|_____|_____| |_|
+
+29 Jan 2015 | 12:17:26,849 | INFO  | main | v2.core.SFSEventManager |     | AnonymousService-1 initalized
+29 Jan 2015 | 12:17:26,902 | INFO  | main | vfs.impl.DefaultFileReplicator |     | Using "C:\Users\WoWoX~\AppData\Local\Temp\vfs_cache" as temporary files store.
+29 Jan 2015 | 12:17:26,987 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | License loaded:
+
+===================================
+LICENSE DETAILS
+-----------------------------------
+Type            : Community Edition
+Max users       : 100
+===================================
+
+29 Jan 2015 | 12:17:26,989 | INFO  | main | entities.managers.SFSBannedUserStorage |     | BanUserStorage initialized
+29 Jan 2015 | 12:17:27,009 | INFO  | main | entities.managers.SFSBannedUserManager |     | BanUser data loaded: 0 records.
+29 Jan 2015 | 12:17:27,015 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | Protocol Type is: BINARY
+29 Jan 2015 | 12:17:27,019 | INFO  | main | v2.config.DefaultConfigLoader |     | Loading: zones\BasicExamples.zone.xml
+29 Jan 2015 | 12:17:27,049 | INFO  | main | v2.config.DefaultConfigLoader |     | Loading: zones\mylife.zone.xml
+29 Jan 2015 | 12:17:27,090 | INFO  | main | entities.managers.SFSZoneManager |     | 
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ >> Zone: BasicExamples 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+29 Jan 2015 | 12:17:27,137 | INFO  | main | entities.managers.SFSRoomManager |     | Room created: { Zone: BasicExamples }, [ Room: The Lobby, Id: 0, Group: default, isGame: false ]
+29 Jan 2015 | 12:17:27,138 | INFO  | main | entities.managers.SFSZoneManager |     | 
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ >> Zone: mylife 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+29 Jan 2015 | 12:17:27,150 | INFO  | main | entities.managers.SFSRoomManager |     | Room created: { Zone: --=={{{ AdminZone }}}==-- }, [ Room: AdminRoom, Id: 1, Group: default, isGame: false ]
+29 Jan 2015 | 12:17:27,150 | INFO  | main | v2.core.AdminToolService |     | AdminTool Service started
+29 Jan 2015 | 12:17:27,422 | INFO  | SFSWorker:Sys:1 | smartfoxserver.v2.SmartFoxServer |     | Listening Sockets: { 0.0.0.0:9933, (Tcp) } { 127.0.0.1:9933, (Udp) } 
+29 Jan 2015 | 12:17:27,423 | INFO  | SFSWorker:Sys:1 | smartfoxserver.v2.SmartFoxServer |     |  
+ _____ _____ _____    ___ __ __ 
+|   __|   __|   __|  |_  |  |  |
+|__   |   __|__   |  |  _|-   -|
+|_____|__|  |_____|  |___|__|__|                                         
+ _____ _____ _____ ____  __ __ 
+| __  |   __|  _  |    \|  |  |
+|    -|   __|     |  |  |_   _|
+|__|__|_____|__|__|____/  |_|  
+[ 2.9.0 ] 
+
+29 Jan 2015 | 12:17:27,424 | INFO  | SFSWorker:Sys:1 | smartfoxserver.v2.SmartFoxServer |     | SmartFoxServer 2X (2.9.0) READY!
+29 Jan 2015 | 12:17:28,028 | WARN  | main | jetty.deploy.DeploymentManager |     | Unable to reach node goal: started
+java.lang.IllegalStateException: Unknown configuration type: SmartFoxConfig in org.eclipse.jetty.deploy.providers.WebAppProvider$1@2bc25a1d
+	at org.eclipse.jetty.xml.XmlConfiguration.setConfig(XmlConfiguration.java:198)
+	at org.eclipse.jetty.xml.XmlConfiguration.<init>(XmlConfiguration.java:138)
+	at org.eclipse.jetty.deploy.providers.WebAppProvider$1.<init>(WebAppProvider.java:268)
+	at org.eclipse.jetty.deploy.providers.WebAppProvider.createContextHandler(WebAppProvider.java:267)
+	at org.eclipse.jetty.deploy.App.getContextHandler(App.java:101)
+	at org.eclipse.jetty.deploy.bindings.StandardDeployer.processBinding(StandardDeployer.java:36)
+	at org.eclipse.jetty.deploy.AppLifeCycle.runBindings(AppLifeCycle.java:186)
+	at org.eclipse.jetty.deploy.DeploymentManager.requestAppGoal(DeploymentManager.java:498)
+	at org.eclipse.jetty.deploy.DeploymentManager.addApp(DeploymentManager.java:146)
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider.fileAdded(ScanningAppProvider.java:180)
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider$1.fileAdded(ScanningAppProvider.java:64)
+	at org.eclipse.jetty.util.Scanner.reportAddition(Scanner.java:605)
+	at org.eclipse.jetty.util.Scanner.reportDifferences(Scanner.java:528)
+	at org.eclipse.jetty.util.Scanner.scan(Scanner.java:391)
+	at org.eclipse.jetty.util.Scanner.doStart(Scanner.java:313)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider.doStart(ScanningAppProvider.java:150)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+	at org.eclipse.jetty.deploy.DeploymentManager.startAppProvider(DeploymentManager.java:560)
+	at org.eclipse.jetty.deploy.DeploymentManager.doStart(DeploymentManager.java:235)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:117)
+	at org.eclipse.jetty.server.Server.start(Server.java:355)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:99)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:324)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+	at org.eclipse.jetty.xml.XmlConfiguration$1.run(XmlConfiguration.java:1250)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.jetty.xml.XmlConfiguration.main(XmlConfiguration.java:1174)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.jetty.start.Main.invokeMain(Main.java:297)
+	at org.eclipse.jetty.start.Main.start(Main.java:724)
+	at org.eclipse.jetty.start.Main.main(Main.java:103)
+	at com.smartfoxserver.v2.http.JettyServer.start(JettyServer.java:35)
+	at com.smartfoxserver.v2.SmartFoxServer.start(SmartFoxServer.java:295)
+	at com.smartfoxserver.v2.Main.main(Main.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.exe4j.runtime.LauncherEngine.launch(Unknown Source)
+	at com.exe4j.runtime.WinLauncher.main(Unknown Source)
+	at com.install4j.runtime.launcher.WinLauncher.main(Unknown Source)
+29 Jan 2015 | 12:17:29,907 | INFO  | main | bluebox.v3.SessionFilter |     | BlueBox-2X Service (3.0.0) ready.
+29 Jan 2015 | 12:19:09,202 | INFO  | Thread-4 | entities.managers.SFSExtensionManager |     | Reloading extension: { Ext: mylife, Type: JAVA, Lev: ZONE, { Zone: mylife }, {} }
+29 Jan 2015 | 12:19:14,480 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | Boot sequence starts...
+29 Jan 2015 | 12:19:14,495 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | 
+ _____ _____ _____    ___ __ __    _____ _____ _____ _____ 
+|   __|   __|   __|  |_  |  |  |  | __  |     |     |_   _|
+|__   |   __|__   |  |  _|-   -|  | __ -|  |  |  |  | | |  
+|_____|__|  |_____|  |___|__|__|  |_____|_____|_____| |_|
+
+29 Jan 2015 | 12:19:15,042 | INFO  | main | v2.core.SFSEventManager |     | AnonymousService-1 initalized
+29 Jan 2015 | 12:19:15,073 | INFO  | main | vfs.impl.DefaultFileReplicator |     | Using "C:\Users\WoWoX~\AppData\Local\Temp\vfs_cache" as temporary files store.
+29 Jan 2015 | 12:19:15,151 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | License loaded:
+
+===================================
+LICENSE DETAILS
+-----------------------------------
+Type            : Community Edition
+Max users       : 100
+===================================
+
+29 Jan 2015 | 12:19:15,151 | INFO  | main | entities.managers.SFSBannedUserStorage |     | BanUserStorage initialized
+29 Jan 2015 | 12:19:15,167 | INFO  | main | entities.managers.SFSBannedUserManager |     | BanUser data loaded: 0 records.
+29 Jan 2015 | 12:19:15,167 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | Protocol Type is: BINARY
+29 Jan 2015 | 12:19:15,167 | INFO  | main | v2.config.DefaultConfigLoader |     | Loading: zones\BasicExamples.zone.xml
+29 Jan 2015 | 12:19:15,214 | INFO  | main | v2.config.DefaultConfigLoader |     | Loading: zones\mylife.zone.xml
+29 Jan 2015 | 12:19:15,245 | INFO  | main | entities.managers.SFSZoneManager |     | 
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ >> Zone: BasicExamples 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+29 Jan 2015 | 12:19:15,276 | INFO  | main | entities.managers.SFSRoomManager |     | Room created: { Zone: BasicExamples }, [ Room: The Lobby, Id: 0, Group: default, isGame: false ]
+29 Jan 2015 | 12:19:15,276 | INFO  | main | entities.managers.SFSZoneManager |     | 
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ >> Zone: mylife 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+29 Jan 2015 | 12:19:15,292 | INFO  | main | entities.managers.SFSRoomManager |     | Room created: { Zone: --=={{{ AdminZone }}}==-- }, [ Room: AdminRoom, Id: 1, Group: default, isGame: false ]
+29 Jan 2015 | 12:19:15,308 | INFO  | main | v2.core.AdminToolService |     | AdminTool Service started
+29 Jan 2015 | 12:19:15,532 | INFO  | SFSWorker:Sys:1 | smartfoxserver.v2.SmartFoxServer |     | Listening Sockets: { 0.0.0.0:9933, (Tcp) } { 127.0.0.1:9933, (Udp) } 
+29 Jan 2015 | 12:19:15,532 | INFO  | SFSWorker:Sys:1 | smartfoxserver.v2.SmartFoxServer |     |  
+ _____ _____ _____    ___ __ __ 
+|   __|   __|   __|  |_  |  |  |
+|__   |   __|__   |  |  _|-   -|
+|_____|__|  |_____|  |___|__|__|                                         
+ _____ _____ _____ ____  __ __ 
+| __  |   __|  _  |    \|  |  |
+|    -|   __|     |  |  |_   _|
+|__|__|_____|__|__|____/  |_|  
+[ 2.9.0 ] 
+
+29 Jan 2015 | 12:19:15,532 | INFO  | SFSWorker:Sys:1 | smartfoxserver.v2.SmartFoxServer |     | SmartFoxServer 2X (2.9.0) READY!
+29 Jan 2015 | 12:19:16,068 | WARN  | main | jetty.deploy.DeploymentManager |     | Unable to reach node goal: started
+java.lang.IllegalStateException: Unknown configuration type: SmartFoxConfig in org.eclipse.jetty.deploy.providers.WebAppProvider$1@1fa0d684
+	at org.eclipse.jetty.xml.XmlConfiguration.setConfig(XmlConfiguration.java:198)
+	at org.eclipse.jetty.xml.XmlConfiguration.<init>(XmlConfiguration.java:138)
+	at org.eclipse.jetty.deploy.providers.WebAppProvider$1.<init>(WebAppProvider.java:268)
+	at org.eclipse.jetty.deploy.providers.WebAppProvider.createContextHandler(WebAppProvider.java:267)
+	at org.eclipse.jetty.deploy.App.getContextHandler(App.java:101)
+	at org.eclipse.jetty.deploy.bindings.StandardDeployer.processBinding(StandardDeployer.java:36)
+	at org.eclipse.jetty.deploy.AppLifeCycle.runBindings(AppLifeCycle.java:186)
+	at org.eclipse.jetty.deploy.DeploymentManager.requestAppGoal(DeploymentManager.java:498)
+	at org.eclipse.jetty.deploy.DeploymentManager.addApp(DeploymentManager.java:146)
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider.fileAdded(ScanningAppProvider.java:180)
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider$1.fileAdded(ScanningAppProvider.java:64)
+	at org.eclipse.jetty.util.Scanner.reportAddition(Scanner.java:605)
+	at org.eclipse.jetty.util.Scanner.reportDifferences(Scanner.java:528)
+	at org.eclipse.jetty.util.Scanner.scan(Scanner.java:391)
+	at org.eclipse.jetty.util.Scanner.doStart(Scanner.java:313)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider.doStart(ScanningAppProvider.java:150)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+	at org.eclipse.jetty.deploy.DeploymentManager.startAppProvider(DeploymentManager.java:560)
+	at org.eclipse.jetty.deploy.DeploymentManager.doStart(DeploymentManager.java:235)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:117)
+	at org.eclipse.jetty.server.Server.start(Server.java:355)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:99)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:324)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+	at org.eclipse.jetty.xml.XmlConfiguration$1.run(XmlConfiguration.java:1250)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.jetty.xml.XmlConfiguration.main(XmlConfiguration.java:1174)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.jetty.start.Main.invokeMain(Main.java:297)
+	at org.eclipse.jetty.start.Main.start(Main.java:724)
+	at org.eclipse.jetty.start.Main.main(Main.java:103)
+	at com.smartfoxserver.v2.http.JettyServer.start(JettyServer.java:35)
+	at com.smartfoxserver.v2.SmartFoxServer.start(SmartFoxServer.java:295)
+	at com.smartfoxserver.v2.Main.main(Main.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.exe4j.runtime.LauncherEngine.launch(Unknown Source)
+	at com.exe4j.runtime.WinLauncher.main(Unknown Source)
+	at com.install4j.runtime.launcher.WinLauncher.main(Unknown Source)
+29 Jan 2015 | 12:19:17,570 | INFO  | main | bluebox.v3.SessionFilter |     | BlueBox-2X Service (3.0.0) ready.
+29 Jan 2015 | 12:22:03,447 | INFO  | Thread-4 | entities.managers.SFSExtensionManager |     | Reloading extension: { Ext: mylife, Type: JAVA, Lev: ZONE, { Zone: mylife }, {} }
+29 Jan 2015 | 12:22:03,450 | ERROR | Thread-4 | entities.managers.SFSExtensionManager |     | com.smartfoxserver.v2.exceptions.SFSExtensionException:
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Exception: com.smartfoxserver.v2.exceptions.SFSExtensionException
+Message: Class not found: my.life.MylifeExtension
+Description: An error occurred while reloading extension: mylife in { Zone: mylife }
+The new extension might not function properly.
++--- --- ---+
+Stack Trace:
++--- --- ---+
+com.smartfoxserver.v2.entities.managers.SFSExtensionManager.createJavaExtension(SFSExtensionManager.java:358)
+com.smartfoxserver.v2.entities.managers.SFSExtensionManager.createExtension(SFSExtensionManager.java:260)
+com.smartfoxserver.v2.entities.managers.SFSExtensionManager.reloadExtension(SFSExtensionManager.java:534)
+com.smartfoxserver.v2.entities.managers.SFSExtensionManager$ExtensionFileChangeListener.fileChanged(SFSExtensionManager.java:111)
+org.apache.commons.vfs.events.ChangedEvent.notify(ChangedEvent.java:34)
+org.apache.commons.vfs.provider.AbstractFileSystem.fireEvent(AbstractFileSystem.java:519)
+org.apache.commons.vfs.provider.AbstractFileSystem.fireFileChanged(AbstractFileSystem.java:487)
+org.apache.commons.vfs.impl.DefaultFileMonitor$FileMonitorAgent.check(DefaultFileMonitor.java:647)
+org.apache.commons.vfs.impl.DefaultFileMonitor$FileMonitorAgent.access$200(DefaultFileMonitor.java:418)
+org.apache.commons.vfs.impl.DefaultFileMonitor.run(DefaultFileMonitor.java:373)
+java.lang.Thread.run(Unknown Source)
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+29 Jan 2015 | 12:22:05,456 | INFO  | Thread-4 | entities.managers.SFSExtensionManager |     | Reloading extension: { Ext: mylife, Type: JAVA, Lev: ZONE, { Zone: mylife }, {} }
+29 Jan 2015 | 12:22:05,464 | INFO  | Thread-4 | Extensions |     | {mylife}: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+****MYLIFE IS READY****
+
+
+
+
+
+
+
+ 
+29 Jan 2015 | 12:22:21,415 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | Boot sequence starts...
+29 Jan 2015 | 12:22:21,415 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | 
+ _____ _____ _____    ___ __ __    _____ _____ _____ _____ 
+|   __|   __|   __|  |_  |  |  |  | __  |     |     |_   _|
+|__   |   __|__   |  |  _|-   -|  | __ -|  |  |  |  | | |  
+|_____|__|  |_____|  |___|__|__|  |_____|_____|_____| |_|
+
+29 Jan 2015 | 12:22:21,998 | INFO  | main | v2.core.SFSEventManager |     | AnonymousService-1 initalized
+29 Jan 2015 | 12:22:22,029 | INFO  | main | vfs.impl.DefaultFileReplicator |     | Using "C:\Users\WoWoX~\AppData\Local\Temp\vfs_cache" as temporary files store.
+29 Jan 2015 | 12:22:22,092 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | License loaded:
+
+===================================
+LICENSE DETAILS
+-----------------------------------
+Type            : Community Edition
+Max users       : 100
+===================================
+
+29 Jan 2015 | 12:22:22,092 | INFO  | main | entities.managers.SFSBannedUserStorage |     | BanUserStorage initialized
+29 Jan 2015 | 12:22:22,108 | INFO  | main | entities.managers.SFSBannedUserManager |     | BanUser data loaded: 0 records.
+29 Jan 2015 | 12:22:22,123 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | Protocol Type is: BINARY
+29 Jan 2015 | 12:22:22,123 | INFO  | main | v2.config.DefaultConfigLoader |     | Loading: zones\BasicExamples.zone.xml
+29 Jan 2015 | 12:22:22,154 | INFO  | main | v2.config.DefaultConfigLoader |     | Loading: zones\mylife.zone.xml
+29 Jan 2015 | 12:22:22,186 | INFO  | main | entities.managers.SFSZoneManager |     | 
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ >> Zone: BasicExamples 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+29 Jan 2015 | 12:22:22,233 | INFO  | main | entities.managers.SFSRoomManager |     | Room created: { Zone: BasicExamples }, [ Room: The Lobby, Id: 0, Group: default, isGame: false ]
+29 Jan 2015 | 12:22:22,233 | INFO  | main | entities.managers.SFSZoneManager |     | 
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ >> Zone: mylife 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+29 Jan 2015 | 12:22:22,233 | INFO  | main | Extensions |     | {mylife}: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+****MYLIFE IS READY****
+
+
+
+
+
+
+
+ 
+29 Jan 2015 | 12:22:22,248 | INFO  | main | entities.managers.SFSRoomManager |     | Room created: { Zone: --=={{{ AdminZone }}}==-- }, [ Room: AdminRoom, Id: 1, Group: default, isGame: false ]
+29 Jan 2015 | 12:22:22,248 | INFO  | main | v2.core.AdminToolService |     | AdminTool Service started
+29 Jan 2015 | 12:22:22,488 | INFO  | SFSWorker:Sys:1 | smartfoxserver.v2.SmartFoxServer |     | Listening Sockets: { 0.0.0.0:9933, (Tcp) } { 127.0.0.1:9933, (Udp) } 
+29 Jan 2015 | 12:22:22,489 | INFO  | SFSWorker:Sys:1 | smartfoxserver.v2.SmartFoxServer |     |  
+ _____ _____ _____    ___ __ __ 
+|   __|   __|   __|  |_  |  |  |
+|__   |   __|__   |  |  _|-   -|
+|_____|__|  |_____|  |___|__|__|                                         
+ _____ _____ _____ ____  __ __ 
+| __  |   __|  _  |    \|  |  |
+|    -|   __|     |  |  |_   _|
+|__|__|_____|__|__|____/  |_|  
+[ 2.9.0 ] 
+
+29 Jan 2015 | 12:22:22,490 | INFO  | SFSWorker:Sys:1 | smartfoxserver.v2.SmartFoxServer |     | SmartFoxServer 2X (2.9.0) READY!
+29 Jan 2015 | 12:22:23,001 | WARN  | main | jetty.deploy.DeploymentManager |     | Unable to reach node goal: started
+java.lang.IllegalStateException: Unknown configuration type: SmartFoxConfig in org.eclipse.jetty.deploy.providers.WebAppProvider$1@1a5f5e4d
+	at org.eclipse.jetty.xml.XmlConfiguration.setConfig(XmlConfiguration.java:198)
+	at org.eclipse.jetty.xml.XmlConfiguration.<init>(XmlConfiguration.java:138)
+	at org.eclipse.jetty.deploy.providers.WebAppProvider$1.<init>(WebAppProvider.java:268)
+	at org.eclipse.jetty.deploy.providers.WebAppProvider.createContextHandler(WebAppProvider.java:267)
+	at org.eclipse.jetty.deploy.App.getContextHandler(App.java:101)
+	at org.eclipse.jetty.deploy.bindings.StandardDeployer.processBinding(StandardDeployer.java:36)
+	at org.eclipse.jetty.deploy.AppLifeCycle.runBindings(AppLifeCycle.java:186)
+	at org.eclipse.jetty.deploy.DeploymentManager.requestAppGoal(DeploymentManager.java:498)
+	at org.eclipse.jetty.deploy.DeploymentManager.addApp(DeploymentManager.java:146)
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider.fileAdded(ScanningAppProvider.java:180)
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider$1.fileAdded(ScanningAppProvider.java:64)
+	at org.eclipse.jetty.util.Scanner.reportAddition(Scanner.java:605)
+	at org.eclipse.jetty.util.Scanner.reportDifferences(Scanner.java:528)
+	at org.eclipse.jetty.util.Scanner.scan(Scanner.java:391)
+	at org.eclipse.jetty.util.Scanner.doStart(Scanner.java:313)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider.doStart(ScanningAppProvider.java:150)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+	at org.eclipse.jetty.deploy.DeploymentManager.startAppProvider(DeploymentManager.java:560)
+	at org.eclipse.jetty.deploy.DeploymentManager.doStart(DeploymentManager.java:235)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:117)
+	at org.eclipse.jetty.server.Server.start(Server.java:355)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:99)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:324)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+	at org.eclipse.jetty.xml.XmlConfiguration$1.run(XmlConfiguration.java:1250)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.jetty.xml.XmlConfiguration.main(XmlConfiguration.java:1174)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.jetty.start.Main.invokeMain(Main.java:297)
+	at org.eclipse.jetty.start.Main.start(Main.java:724)
+	at org.eclipse.jetty.start.Main.main(Main.java:103)
+	at com.smartfoxserver.v2.http.JettyServer.start(JettyServer.java:35)
+	at com.smartfoxserver.v2.SmartFoxServer.start(SmartFoxServer.java:295)
+	at com.smartfoxserver.v2.Main.main(Main.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.exe4j.runtime.LauncherEngine.launch(Unknown Source)
+	at com.exe4j.runtime.WinLauncher.main(Unknown Source)
+	at com.install4j.runtime.launcher.WinLauncher.main(Unknown Source)
+29 Jan 2015 | 12:22:24,469 | INFO  | main | bluebox.v3.SessionFilter |     | BlueBox-2X Service (3.0.0) ready.
+29 Jan 2015 | 12:23:36,238 | INFO  | Thread-4 | entities.managers.SFSExtensionManager |     | Reloading extension: { Ext: mylife, Type: JAVA, Lev: ZONE, { Zone: mylife }, {} }
+29 Jan 2015 | 12:23:36,245 | ERROR | Thread-4 | entities.managers.SFSExtensionManager |     | com.smartfoxserver.v2.exceptions.SFSExtensionException:
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Exception: com.smartfoxserver.v2.exceptions.SFSExtensionException
+Message: Class not found: my.life.MylifeExtension
+Description: An error occurred while reloading extension: mylife in { Zone: mylife }
+The new extension might not function properly.
++--- --- ---+
+Stack Trace:
++--- --- ---+
+com.smartfoxserver.v2.entities.managers.SFSExtensionManager.createJavaExtension(SFSExtensionManager.java:358)
+com.smartfoxserver.v2.entities.managers.SFSExtensionManager.createExtension(SFSExtensionManager.java:260)
+com.smartfoxserver.v2.entities.managers.SFSExtensionManager.reloadExtension(SFSExtensionManager.java:534)
+com.smartfoxserver.v2.entities.managers.SFSExtensionManager$ExtensionFileChangeListener.fileChanged(SFSExtensionManager.java:111)
+org.apache.commons.vfs.events.ChangedEvent.notify(ChangedEvent.java:34)
+org.apache.commons.vfs.provider.AbstractFileSystem.fireEvent(AbstractFileSystem.java:519)
+org.apache.commons.vfs.provider.AbstractFileSystem.fireFileChanged(AbstractFileSystem.java:487)
+org.apache.commons.vfs.impl.DefaultFileMonitor$FileMonitorAgent.check(DefaultFileMonitor.java:647)
+org.apache.commons.vfs.impl.DefaultFileMonitor$FileMonitorAgent.access$200(DefaultFileMonitor.java:418)
+org.apache.commons.vfs.impl.DefaultFileMonitor.run(DefaultFileMonitor.java:373)
+java.lang.Thread.run(Unknown Source)
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+29 Jan 2015 | 12:23:42,259 | INFO  | Thread-4 | entities.managers.SFSExtensionManager |     | Reloading extension: { Ext: mylife, Type: JAVA, Lev: ZONE, { Zone: mylife }, {} }
+29 Jan 2015 | 12:23:42,262 | INFO  | Thread-4 | Extensions |     | {mylife}: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+****MYLIFE IS READY****
+
+
+
+
+
+
+
+ 
+29 Jan 2015 | 12:23:42,273 | INFO  | Timer-0 | Extensions |     | {mylife}: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+****MYLIFE IS READY****
+
+
+
+
+
+
+
+ 
+29 Jan 2015 | 12:23:45,289 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | Boot sequence starts...
+29 Jan 2015 | 12:23:45,305 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | 
+ _____ _____ _____    ___ __ __    _____ _____ _____ _____ 
+|   __|   __|   __|  |_  |  |  |  | __  |     |     |_   _|
+|__   |   __|__   |  |  _|-   -|  | __ -|  |  |  |  | | |  
+|_____|__|  |_____|  |___|__|__|  |_____|_____|_____| |_|
+
+29 Jan 2015 | 12:23:45,852 | INFO  | main | v2.core.SFSEventManager |     | AnonymousService-1 initalized
+29 Jan 2015 | 12:23:45,883 | INFO  | main | vfs.impl.DefaultFileReplicator |     | Using "C:\Users\WoWoX~\AppData\Local\Temp\vfs_cache" as temporary files store.
+29 Jan 2015 | 12:23:45,961 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | License loaded:
+
+===================================
+LICENSE DETAILS
+-----------------------------------
+Type            : Community Edition
+Max users       : 100
+===================================
+
+29 Jan 2015 | 12:23:45,961 | INFO  | main | entities.managers.SFSBannedUserStorage |     | BanUserStorage initialized
+29 Jan 2015 | 12:23:45,977 | INFO  | main | entities.managers.SFSBannedUserManager |     | BanUser data loaded: 0 records.
+29 Jan 2015 | 12:23:45,977 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | Protocol Type is: BINARY
+29 Jan 2015 | 12:23:45,977 | INFO  | main | v2.config.DefaultConfigLoader |     | Loading: zones\BasicExamples.zone.xml
+29 Jan 2015 | 12:23:46,024 | INFO  | main | v2.config.DefaultConfigLoader |     | Loading: zones\mylife.zone.xml
+29 Jan 2015 | 12:23:46,055 | INFO  | main | entities.managers.SFSZoneManager |     | 
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ >> Zone: BasicExamples 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+29 Jan 2015 | 12:23:46,086 | INFO  | main | entities.managers.SFSRoomManager |     | Room created: { Zone: BasicExamples }, [ Room: The Lobby, Id: 0, Group: default, isGame: false ]
+29 Jan 2015 | 12:23:46,086 | INFO  | main | entities.managers.SFSZoneManager |     | 
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ >> Zone: mylife 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+29 Jan 2015 | 12:23:46,102 | INFO  | main | Extensions |     | {mylife}: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+****MYLIFE IS READY****
+
+
+
+
+
+
+
+ 
+29 Jan 2015 | 12:23:46,117 | INFO  | Timer-0 | Extensions |     | {mylife}: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+****MYLIFE IS READY****
+
+
+
+
+
+
+
+ 
+29 Jan 2015 | 12:23:46,117 | INFO  | main | entities.managers.SFSRoomManager |     | Room created: { Zone: --=={{{ AdminZone }}}==-- }, [ Room: AdminRoom, Id: 1, Group: default, isGame: false ]
+29 Jan 2015 | 12:23:46,117 | INFO  | main | v2.core.AdminToolService |     | AdminTool Service started
+29 Jan 2015 | 12:23:46,404 | INFO  | SFSWorker:Sys:1 | smartfoxserver.v2.SmartFoxServer |     | Listening Sockets: { 0.0.0.0:9933, (Tcp) } { 127.0.0.1:9933, (Udp) } 
+29 Jan 2015 | 12:23:46,405 | INFO  | SFSWorker:Sys:1 | smartfoxserver.v2.SmartFoxServer |     |  
+ _____ _____ _____    ___ __ __ 
+|   __|   __|   __|  |_  |  |  |
+|__   |   __|__   |  |  _|-   -|
+|_____|__|  |_____|  |___|__|__|                                         
+ _____ _____ _____ ____  __ __ 
+| __  |   __|  _  |    \|  |  |
+|    -|   __|     |  |  |_   _|
+|__|__|_____|__|__|____/  |_|  
+[ 2.9.0 ] 
+
+29 Jan 2015 | 12:23:46,406 | INFO  | SFSWorker:Sys:1 | smartfoxserver.v2.SmartFoxServer |     | SmartFoxServer 2X (2.9.0) READY!
+29 Jan 2015 | 12:23:46,931 | WARN  | main | jetty.deploy.DeploymentManager |     | Unable to reach node goal: started
+java.lang.IllegalStateException: Unknown configuration type: SmartFoxConfig in org.eclipse.jetty.deploy.providers.WebAppProvider$1@78638454
+	at org.eclipse.jetty.xml.XmlConfiguration.setConfig(XmlConfiguration.java:198)
+	at org.eclipse.jetty.xml.XmlConfiguration.<init>(XmlConfiguration.java:138)
+	at org.eclipse.jetty.deploy.providers.WebAppProvider$1.<init>(WebAppProvider.java:268)
+	at org.eclipse.jetty.deploy.providers.WebAppProvider.createContextHandler(WebAppProvider.java:267)
+	at org.eclipse.jetty.deploy.App.getContextHandler(App.java:101)
+	at org.eclipse.jetty.deploy.bindings.StandardDeployer.processBinding(StandardDeployer.java:36)
+	at org.eclipse.jetty.deploy.AppLifeCycle.runBindings(AppLifeCycle.java:186)
+	at org.eclipse.jetty.deploy.DeploymentManager.requestAppGoal(DeploymentManager.java:498)
+	at org.eclipse.jetty.deploy.DeploymentManager.addApp(DeploymentManager.java:146)
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider.fileAdded(ScanningAppProvider.java:180)
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider$1.fileAdded(ScanningAppProvider.java:64)
+	at org.eclipse.jetty.util.Scanner.reportAddition(Scanner.java:605)
+	at org.eclipse.jetty.util.Scanner.reportDifferences(Scanner.java:528)
+	at org.eclipse.jetty.util.Scanner.scan(Scanner.java:391)
+	at org.eclipse.jetty.util.Scanner.doStart(Scanner.java:313)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider.doStart(ScanningAppProvider.java:150)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+	at org.eclipse.jetty.deploy.DeploymentManager.startAppProvider(DeploymentManager.java:560)
+	at org.eclipse.jetty.deploy.DeploymentManager.doStart(DeploymentManager.java:235)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:117)
+	at org.eclipse.jetty.server.Server.start(Server.java:355)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:99)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:324)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+	at org.eclipse.jetty.xml.XmlConfiguration$1.run(XmlConfiguration.java:1250)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.jetty.xml.XmlConfiguration.main(XmlConfiguration.java:1174)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.jetty.start.Main.invokeMain(Main.java:297)
+	at org.eclipse.jetty.start.Main.start(Main.java:724)
+	at org.eclipse.jetty.start.Main.main(Main.java:103)
+	at com.smartfoxserver.v2.http.JettyServer.start(JettyServer.java:35)
+	at com.smartfoxserver.v2.SmartFoxServer.start(SmartFoxServer.java:295)
+	at com.smartfoxserver.v2.Main.main(Main.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.exe4j.runtime.LauncherEngine.launch(Unknown Source)
+	at com.exe4j.runtime.WinLauncher.main(Unknown Source)
+	at com.install4j.runtime.launcher.WinLauncher.main(Unknown Source)
+29 Jan 2015 | 12:23:48,356 | INFO  | main | bluebox.v3.SessionFilter |     | BlueBox-2X Service (3.0.0) ready.
+29 Jan 2015 | 12:25:12,421 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session created: { Id: 1, Type: DEFAULT, Logged: No, IP: 127.0.0.1:60404 } on Server port: 9933 <---> 60404
+29 Jan 2015 | 12:25:12,454 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session removed: { Id: 1, Type: DEFAULT, Logged: No, IP: 127.0.0.1:60404 }
+29 Jan 2015 | 12:25:12,475 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session created: { Id: 2, Type: DEFAULT, Logged: No, IP: 127.0.0.1:60405 } on Server port: 9933 <---> 60405
+29 Jan 2015 | 12:25:14,194 | INFO  | SFSWorker:Sys:2 | v2.api.SFSApi |     | User login: { Zone: BasicExamples }, ( User Name: wowox, Id: 0, Priv: 0, Sess: 127.0.0.1:60405 ) , Type: FlashPlayer:PlugIn:WIN 16,0,0,296
+29 Jan 2015 | 12:25:14,282 | INFO  | SFSWorker:Sys:3 | v2.api.SFSApi |     | Room joined: [ Room: The Lobby, Id: 0, Group: default, isGame: false ], { Zone: BasicExamples }, ( User Name: wowox, Id: 0, Priv: 0, Sess: 127.0.0.1:60405 ) , asSpect: false
+29 Jan 2015 | 12:30:36,429 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session removed: { Id: 2, Type: DEFAULT, Logged: Yes, IP: 127.0.0.1:60405 }
+29 Jan 2015 | 12:30:36,435 | INFO  | SFSWorker:Sys:3 | v2.api.SFSApi |     | User disconnected: { Zone: BasicExamples }, ( User Name: wowox, Id: 0, Priv: 0, Sess: 127.0.0.1:60405 ) , SessionLen: 322241, Type: FlashPlayer:PlugIn:WIN 16,0,0,296
+29 Jan 2015 | 12:30:53,655 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session created: { Id: 3, Type: DEFAULT, Logged: No, IP: 127.0.0.1:60470 } on Server port: 9933 <---> 60470
+29 Jan 2015 | 12:30:53,666 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session removed: { Id: 3, Type: DEFAULT, Logged: No, IP: 127.0.0.1:60470 }
+29 Jan 2015 | 12:30:53,703 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session created: { Id: 4, Type: DEFAULT, Logged: No, IP: 127.0.0.1:60471 } on Server port: 9933 <---> 60471
+29 Jan 2015 | 12:30:55,995 | INFO  | SFSWorker:Sys:2 | v2.api.SFSApi |     | User login: { Zone: BasicExamples }, ( User Name: wowox, Id: 1, Priv: 0, Sess: 127.0.0.1:60471 ) , Type: FlashPlayer:PlugIn:WIN 16,0,0,296
+29 Jan 2015 | 12:30:56,081 | INFO  | SFSWorker:Sys:1 | v2.api.SFSApi |     | Room joined: [ Room: The Lobby, Id: 0, Group: default, isGame: false ], { Zone: BasicExamples }, ( User Name: wowox, Id: 1, Priv: 0, Sess: 127.0.0.1:60471 ) , asSpect: false
+29 Jan 2015 | 12:31:07,751 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session removed: { Id: 4, Type: DEFAULT, Logged: Yes, IP: 127.0.0.1:60471 }
+29 Jan 2015 | 12:31:07,752 | INFO  | SFSWorker:Sys:3 | v2.api.SFSApi |     | User disconnected: { Zone: BasicExamples }, ( User Name: wowox, Id: 1, Priv: 0, Sess: 127.0.0.1:60471 ) , SessionLen: 11757, Type: FlashPlayer:PlugIn:WIN 16,0,0,296
+29 Jan 2015 | 12:31:09,182 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session created: { Id: 5, Type: DEFAULT, Logged: No, IP: 127.0.0.1:60476 } on Server port: 9933 <---> 60476
+29 Jan 2015 | 12:31:09,193 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session removed: { Id: 5, Type: DEFAULT, Logged: No, IP: 127.0.0.1:60476 }
+29 Jan 2015 | 12:31:09,236 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session created: { Id: 6, Type: DEFAULT, Logged: No, IP: 127.0.0.1:60477 } on Server port: 9933 <---> 60477
+29 Jan 2015 | 12:31:10,421 | INFO  | SFSWorker:Sys:4 | v2.api.SFSApi |     | User login: { Zone: BasicExamples }, ( User Name: f, Id: 2, Priv: 0, Sess: 127.0.0.1:60477 ) , Type: FlashPlayer:PlugIn:WIN 16,0,0,296
+29 Jan 2015 | 12:31:10,507 | INFO  | SFSWorker:Sys:2 | v2.api.SFSApi |     | Room joined: [ Room: The Lobby, Id: 0, Group: default, isGame: false ], { Zone: BasicExamples }, ( User Name: f, Id: 2, Priv: 0, Sess: 127.0.0.1:60477 ) , asSpect: false
+29 Jan 2015 | 12:32:14,064 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session removed: { Id: 6, Type: DEFAULT, Logged: Yes, IP: 127.0.0.1:60477 }
+29 Jan 2015 | 12:32:14,066 | INFO  | SFSWorker:Sys:1 | v2.api.SFSApi |     | User disconnected: { Zone: BasicExamples }, ( User Name: f, Id: 2, Priv: 0, Sess: 127.0.0.1:60477 ) , SessionLen: 63645, Type: FlashPlayer:PlugIn:WIN 16,0,0,296
+29 Jan 2015 | 12:40:29,382 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session created: { Id: 7, Type: DEFAULT, Logged: No, IP: 127.0.0.1:60616 } on Server port: 9933 <---> 60616
+29 Jan 2015 | 12:40:29,393 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session removed: { Id: 7, Type: DEFAULT, Logged: No, IP: 127.0.0.1:60616 }
+29 Jan 2015 | 12:40:29,435 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session created: { Id: 8, Type: DEFAULT, Logged: No, IP: 127.0.0.1:60617 } on Server port: 9933 <---> 60617
+29 Jan 2015 | 12:40:29,476 | INFO  | SFSWorker:Sys:2 | v2.api.SFSApi |     | Bad login request, Zone: SimpleMMOWorld does not exist. Requested by: { Id: 8, Type: DEFAULT, Logged: No, IP: 127.0.0.1:60617 }
+29 Jan 2015 | 12:40:41,535 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | Boot sequence starts...
+29 Jan 2015 | 12:40:41,546 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | 
+ _____ _____ _____    ___ __ __    _____ _____ _____ _____ 
+|   __|   __|   __|  |_  |  |  |  | __  |     |     |_   _|
+|__   |   __|__   |  |  _|-   -|  | __ -|  |  |  |  | | |  
+|_____|__|  |_____|  |___|__|__|  |_____|_____|_____| |_|
+
+29 Jan 2015 | 12:40:42,202 | INFO  | main | v2.core.SFSEventManager |     | AnonymousService-1 initalized
+29 Jan 2015 | 12:40:42,241 | INFO  | main | vfs.impl.DefaultFileReplicator |     | Using "C:\Users\WoWoX~\AppData\Local\Temp\vfs_cache" as temporary files store.
+29 Jan 2015 | 12:40:42,320 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | License loaded:
+
+===================================
+LICENSE DETAILS
+-----------------------------------
+Type            : Community Edition
+Max users       : 100
+===================================
+
+29 Jan 2015 | 12:40:42,322 | INFO  | main | entities.managers.SFSBannedUserStorage |     | BanUserStorage initialized
+29 Jan 2015 | 12:40:42,357 | INFO  | main | entities.managers.SFSBannedUserManager |     | BanUser data loaded: 0 records.
+29 Jan 2015 | 12:40:42,363 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | Protocol Type is: BINARY
+29 Jan 2015 | 12:40:42,366 | INFO  | main | v2.config.DefaultConfigLoader |     | Loading: zones\BasicExamples.zone.xml
+29 Jan 2015 | 12:40:42,439 | INFO  | main | v2.config.DefaultConfigLoader |     | Loading: zones\mylife.zone.xml
+29 Jan 2015 | 12:40:42,500 | INFO  | main | v2.config.DefaultConfigLoader |     | Loading: zones\SimpleMMOWorld.zone.xml
+29 Jan 2015 | 12:40:42,527 | INFO  | main | entities.managers.SFSZoneManager |     | 
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ >> Zone: BasicExamples 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+29 Jan 2015 | 12:40:42,573 | INFO  | main | entities.managers.SFSRoomManager |     | Room created: { Zone: BasicExamples }, [ Room: The Lobby, Id: 0, Group: default, isGame: false ]
+29 Jan 2015 | 12:40:42,575 | INFO  | main | entities.managers.SFSZoneManager |     | 
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ >> Zone: mylife 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+29 Jan 2015 | 12:40:42,587 | INFO  | main | Extensions |     | {mylife}: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+****MYLIFE IS READY****
+
+
+
+
+
+
+
+ 
+29 Jan 2015 | 12:40:42,592 | INFO  | main | entities.managers.SFSZoneManager |     | 
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ >> Zone: SimpleMMOWorld 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+29 Jan 2015 | 12:40:42,602 | INFO  | Timer-0 | Extensions |     | {mylife}: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+****MYLIFE IS READY****
+
+
+
+
+
+
+
+ 
+29 Jan 2015 | 12:40:42,609 | INFO  | main | entities.managers.SFSRoomManager |     | Room created: { Zone: SimpleMMOWorld }, [ MMORoom: The Map, Id: 1, Group: default, AOI: (240, 180, 0) ]
+29 Jan 2015 | 12:40:42,621 | INFO  | main | entities.managers.SFSRoomManager |     | Room created: { Zone: --=={{{ AdminZone }}}==-- }, [ Room: AdminRoom, Id: 2, Group: default, isGame: false ]
+29 Jan 2015 | 12:40:42,631 | INFO  | main | v2.core.AdminToolService |     | AdminTool Service started
+29 Jan 2015 | 12:40:42,855 | INFO  | SFSWorker:Sys:1 | smartfoxserver.v2.SmartFoxServer |     | Listening Sockets: { 0.0.0.0:9933, (Tcp) } { 127.0.0.1:9933, (Udp) } 
+29 Jan 2015 | 12:40:42,856 | INFO  | SFSWorker:Sys:1 | smartfoxserver.v2.SmartFoxServer |     |  
+ _____ _____ _____    ___ __ __ 
+|   __|   __|   __|  |_  |  |  |
+|__   |   __|__   |  |  _|-   -|
+|_____|__|  |_____|  |___|__|__|                                         
+ _____ _____ _____ ____  __ __ 
+| __  |   __|  _  |    \|  |  |
+|    -|   __|     |  |  |_   _|
+|__|__|_____|__|__|____/  |_|  
+[ 2.9.0 ] 
+
+29 Jan 2015 | 12:40:42,857 | INFO  | SFSWorker:Sys:1 | smartfoxserver.v2.SmartFoxServer |     | SmartFoxServer 2X (2.9.0) READY!
+29 Jan 2015 | 12:40:43,449 | WARN  | main | jetty.deploy.DeploymentManager |     | Unable to reach node goal: started
+java.lang.IllegalStateException: Unknown configuration type: SmartFoxConfig in org.eclipse.jetty.deploy.providers.WebAppProvider$1@7d951e37
+	at org.eclipse.jetty.xml.XmlConfiguration.setConfig(XmlConfiguration.java:198)
+	at org.eclipse.jetty.xml.XmlConfiguration.<init>(XmlConfiguration.java:138)
+	at org.eclipse.jetty.deploy.providers.WebAppProvider$1.<init>(WebAppProvider.java:268)
+	at org.eclipse.jetty.deploy.providers.WebAppProvider.createContextHandler(WebAppProvider.java:267)
+	at org.eclipse.jetty.deploy.App.getContextHandler(App.java:101)
+	at org.eclipse.jetty.deploy.bindings.StandardDeployer.processBinding(StandardDeployer.java:36)
+	at org.eclipse.jetty.deploy.AppLifeCycle.runBindings(AppLifeCycle.java:186)
+	at org.eclipse.jetty.deploy.DeploymentManager.requestAppGoal(DeploymentManager.java:498)
+	at org.eclipse.jetty.deploy.DeploymentManager.addApp(DeploymentManager.java:146)
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider.fileAdded(ScanningAppProvider.java:180)
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider$1.fileAdded(ScanningAppProvider.java:64)
+	at org.eclipse.jetty.util.Scanner.reportAddition(Scanner.java:605)
+	at org.eclipse.jetty.util.Scanner.reportDifferences(Scanner.java:528)
+	at org.eclipse.jetty.util.Scanner.scan(Scanner.java:391)
+	at org.eclipse.jetty.util.Scanner.doStart(Scanner.java:313)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider.doStart(ScanningAppProvider.java:150)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+	at org.eclipse.jetty.deploy.DeploymentManager.startAppProvider(DeploymentManager.java:560)
+	at org.eclipse.jetty.deploy.DeploymentManager.doStart(DeploymentManager.java:235)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:117)
+	at org.eclipse.jetty.server.Server.start(Server.java:355)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:99)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:324)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+	at org.eclipse.jetty.xml.XmlConfiguration$1.run(XmlConfiguration.java:1250)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.jetty.xml.XmlConfiguration.main(XmlConfiguration.java:1174)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.jetty.start.Main.invokeMain(Main.java:297)
+	at org.eclipse.jetty.start.Main.start(Main.java:724)
+	at org.eclipse.jetty.start.Main.main(Main.java:103)
+	at com.smartfoxserver.v2.http.JettyServer.start(JettyServer.java:35)
+	at com.smartfoxserver.v2.SmartFoxServer.start(SmartFoxServer.java:295)
+	at com.smartfoxserver.v2.Main.main(Main.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.exe4j.runtime.LauncherEngine.launch(Unknown Source)
+	at com.exe4j.runtime.WinLauncher.main(Unknown Source)
+	at com.install4j.runtime.launcher.WinLauncher.main(Unknown Source)
+29 Jan 2015 | 12:40:45,285 | INFO  | main | bluebox.v3.SessionFilter |     | BlueBox-2X Service (3.0.0) ready.
+29 Jan 2015 | 12:40:50,541 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session created: { Id: 1, Type: DEFAULT, Logged: No, IP: 127.0.0.1:60638 } on Server port: 9933 <---> 60638
+29 Jan 2015 | 12:40:50,554 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session removed: { Id: 1, Type: DEFAULT, Logged: No, IP: 127.0.0.1:60638 }
+29 Jan 2015 | 12:40:50,583 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session created: { Id: 2, Type: DEFAULT, Logged: No, IP: 127.0.0.1:60639 } on Server port: 9933 <---> 60639
+29 Jan 2015 | 12:40:50,649 | INFO  | SFSWorker:Sys:2 | v2.api.SFSApi |     | User login: { Zone: SimpleMMOWorld }, ( User Name: wowox, Id: 0, Priv: 0, Sess: 127.0.0.1:60639 ) , Type: Flash
+29 Jan 2015 | 12:41:01,488 | INFO  | SFSWorker:Sys:4 | v2.api.SFSApi |     | Room joined: [ MMORoom: The Map, Id: 1, Group: default, AOI: (240, 180, 0) ], { Zone: SimpleMMOWorld }, ( User Name: wowox, Id: 0, Priv: 0, Sess: 127.0.0.1:60639 ) , asSpect: false
+29 Jan 2015 | 12:44:23,012 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session removed: { Id: 2, Type: DEFAULT, Logged: Yes, IP: 127.0.0.1:60639 }
+29 Jan 2015 | 12:44:23,014 | INFO  | SFSWorker:Sys:3 | v2.api.SFSApi |     | User disconnected: { Zone: SimpleMMOWorld }, ( User Name: wowox, Id: 0, Priv: 0, Sess: 127.0.0.1:60639 ) , SessionLen: 212365, Type: Flash
+29 Jan 2015 | 12:44:27,585 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session created: { Id: 3, Type: DEFAULT, Logged: No, IP: 127.0.0.1:60660 } on Server port: 9933 <---> 60660
+29 Jan 2015 | 12:44:27,596 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session removed: { Id: 3, Type: DEFAULT, Logged: No, IP: 127.0.0.1:60660 }
+29 Jan 2015 | 12:44:27,618 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session created: { Id: 4, Type: DEFAULT, Logged: No, IP: 127.0.0.1:60661 } on Server port: 9933 <---> 60661
+29 Jan 2015 | 12:44:27,653 | INFO  | SFSWorker:Sys:1 | v2.api.SFSApi |     | User login: { Zone: SimpleMMOWorld }, ( User Name: lmao, Id: 1, Priv: 0, Sess: 127.0.0.1:60661 ) , Type: Flash
+29 Jan 2015 | 12:44:28,904 | INFO  | SFSWorker:Sys:2 | v2.api.SFSApi |     | Room joined: [ MMORoom: The Map, Id: 1, Group: default, AOI: (240, 180, 0) ], { Zone: SimpleMMOWorld }, ( User Name: lmao, Id: 1, Priv: 0, Sess: 127.0.0.1:60661 ) , asSpect: false
+29 Jan 2015 | 12:49:43,003 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session removed: { Id: 4, Type: DEFAULT, Logged: Yes, IP: 127.0.0.1:60661 }
+29 Jan 2015 | 12:49:43,006 | INFO  | SFSWorker:Sys:2 | v2.api.SFSApi |     | User disconnected: { Zone: SimpleMMOWorld }, ( User Name: lmao, Id: 1, Priv: 0, Sess: 127.0.0.1:60661 ) , SessionLen: 315353, Type: Flash
+29 Jan 2015 | 12:55:42,862 | INFO  | pool-1-thread-4 | util.stats.CCULoggerTask |     | CCU stats: { Zone: mylife }, CCU: 0/0
+29 Jan 2015 | 12:55:42,864 | INFO  | pool-1-thread-4 | util.stats.CCULoggerTask |     | CCU stats: { Zone: --=={{{ AdminZone }}}==-- }, CCU: 0/0
+29 Jan 2015 | 12:55:42,865 | INFO  | pool-1-thread-4 | util.stats.CCULoggerTask |     | CCU stats: { Zone: SimpleMMOWorld }, CCU: 0/1
+29 Jan 2015 | 12:55:42,866 | INFO  | pool-1-thread-4 | util.stats.CCULoggerTask |     | CCU stats: { Zone: BasicExamples }, CCU: 0/0
+29 Jan 2015 | 12:55:42,867 | INFO  | pool-1-thread-4 | util.stats.CCULoggerTask |     | CCU stats: CCU: 0/1
+29 Jan 2015 | 12:56:20,767 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session created: { Id: 5, Type: DEFAULT, Logged: No, IP: 127.0.0.1:60807 } on Server port: 9933 <---> 60807
+29 Jan 2015 | 12:56:20,778 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session removed: { Id: 5, Type: DEFAULT, Logged: No, IP: 127.0.0.1:60807 }
+29 Jan 2015 | 12:56:20,799 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session created: { Id: 6, Type: DEFAULT, Logged: No, IP: 127.0.0.1:60808 } on Server port: 9933 <---> 60808
+29 Jan 2015 | 12:56:20,835 | INFO  | SFSWorker:Sys:2 | v2.api.SFSApi |     | User login: { Zone: SimpleMMOWorld }, ( User Name: wowox, Id: 2, Priv: 0, Sess: 127.0.0.1:60808 ) , Type: Flash
+29 Jan 2015 | 12:56:22,633 | INFO  | SFSWorker:Sys:4 | v2.api.SFSApi |     | Room joined: [ MMORoom: The Map, Id: 1, Group: default, AOI: (240, 180, 0) ], { Zone: SimpleMMOWorld }, ( User Name: wowox, Id: 2, Priv: 0, Sess: 127.0.0.1:60808 ) , asSpect: false
+29 Jan 2015 | 12:56:39,231 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session removed: { Id: 6, Type: DEFAULT, Logged: Yes, IP: 127.0.0.1:60808 }
+29 Jan 2015 | 12:56:39,233 | INFO  | SFSWorker:Sys:4 | v2.api.SFSApi |     | User disconnected: { Zone: SimpleMMOWorld }, ( User Name: wowox, Id: 2, Priv: 0, Sess: 127.0.0.1:60808 ) , SessionLen: 18398, Type: Flash
+29 Jan 2015 | 12:57:42,307 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session created: { Id: 7, Type: DEFAULT, Logged: No, IP: 127.0.0.1:60953 } on Server port: 9933 <---> 60953
+29 Jan 2015 | 12:57:42,353 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session removed: { Id: 7, Type: DEFAULT, Logged: No, IP: 127.0.0.1:60953 }
+29 Jan 2015 | 12:57:42,390 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session created: { Id: 8, Type: DEFAULT, Logged: No, IP: 127.0.0.1:60954 } on Server port: 9933 <---> 60954
+29 Jan 2015 | 12:57:42,437 | INFO  | SFSWorker:Sys:2 | v2.api.SFSApi |     | User login: { Zone: SimpleMMOWorld }, ( User Name: r, Id: 3, Priv: 0, Sess: 127.0.0.1:60954 ) , Type: Flash
+29 Jan 2015 | 12:57:46,895 | INFO  | SFSWorker:Sys:3 | v2.api.SFSApi |     | Room joined: [ MMORoom: The Map, Id: 1, Group: default, AOI: (240, 180, 0) ], { Zone: SimpleMMOWorld }, ( User Name: r, Id: 3, Priv: 0, Sess: 127.0.0.1:60954 ) , asSpect: false
+29 Jan 2015 | 12:57:48,894 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session removed: { Id: 8, Type: DEFAULT, Logged: Yes, IP: 127.0.0.1:60954 }
+29 Jan 2015 | 12:57:48,895 | INFO  | SFSWorker:Sys:3 | v2.api.SFSApi |     | User disconnected: { Zone: SimpleMMOWorld }, ( User Name: r, Id: 3, Priv: 0, Sess: 127.0.0.1:60954 ) , SessionLen: 6458, Type: Flash
+29 Jan 2015 | 12:57:56,842 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session created: { Id: 9, Type: DEFAULT, Logged: No, IP: 127.0.0.1:60960 } on Server port: 9933 <---> 60960
+29 Jan 2015 | 12:57:56,858 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session removed: { Id: 9, Type: DEFAULT, Logged: No, IP: 127.0.0.1:60960 }
+29 Jan 2015 | 12:57:56,892 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session created: { Id: 10, Type: DEFAULT, Logged: No, IP: 127.0.0.1:60961 } on Server port: 9933 <---> 60961
+29 Jan 2015 | 12:57:56,930 | INFO  | SFSWorker:Sys:1 | v2.api.SFSApi |     | User login: { Zone: SimpleMMOWorld }, ( User Name: rrr, Id: 4, Priv: 0, Sess: 127.0.0.1:60961 ) , Type: Flash
+29 Jan 2015 | 12:57:59,100 | INFO  | SFSWorker:Sys:4 | v2.api.SFSApi |     | Room joined: [ MMORoom: The Map, Id: 1, Group: default, AOI: (240, 180, 0) ], { Zone: SimpleMMOWorld }, ( User Name: rrr, Id: 4, Priv: 0, Sess: 127.0.0.1:60961 ) , asSpect: false

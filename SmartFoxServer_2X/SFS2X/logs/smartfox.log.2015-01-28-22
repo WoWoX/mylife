@@ -1,0 +1,158 @@
+28 Jan 2015 | 22:00:58,958 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | Boot sequence starts...
+28 Jan 2015 | 22:00:58,974 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | 
+ _____ _____ _____    ___ __ __    _____ _____ _____ _____ 
+|   __|   __|   __|  |_  |  |  |  | __  |     |     |_   _|
+|__   |   __|__   |  |  _|-   -|  | __ -|  |  |  |  | | |  
+|_____|__|  |_____|  |___|__|__|  |_____|_____|_____| |_|
+
+28 Jan 2015 | 22:00:59,596 | INFO  | main | v2.core.SFSEventManager |     | AnonymousService-1 initalized
+28 Jan 2015 | 22:00:59,633 | INFO  | main | vfs.impl.DefaultFileReplicator |     | Using "C:\Users\WoWoX~\AppData\Local\Temp\vfs_cache" as temporary files store.
+28 Jan 2015 | 22:00:59,725 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | License loaded:
+
+===================================
+LICENSE DETAILS
+-----------------------------------
+Type            : Community Edition
+Max users       : 100
+===================================
+
+28 Jan 2015 | 22:00:59,727 | INFO  | main | entities.managers.SFSBannedUserStorage |     | BanUserStorage initialized
+28 Jan 2015 | 22:00:59,729 | WARN  | main | entities.managers.SFSBannedUserManager |     | Failure loading the BannedUser DB: java.io.EOFException
+28 Jan 2015 | 22:00:59,736 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | Protocol Type is: BINARY
+28 Jan 2015 | 22:00:59,739 | INFO  | main | v2.config.DefaultConfigLoader |     | Loading: zones\BasicExamples.zone.xml
+28 Jan 2015 | 22:00:59,783 | INFO  | main | v2.config.DefaultConfigLoader |     | Loading: zones\mylife.zone.xml
+28 Jan 2015 | 22:00:59,824 | INFO  | main | entities.managers.SFSZoneManager |     | 
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ >> Zone: BasicExamples 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+28 Jan 2015 | 22:00:59,875 | INFO  | main | entities.managers.SFSRoomManager |     | Room created: { Zone: BasicExamples }, [ Room: The Lobby, Id: 0, Group: default, isGame: false ]
+28 Jan 2015 | 22:00:59,876 | INFO  | main | entities.managers.SFSZoneManager |     | 
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ >> Zone: mylife 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+28 Jan 2015 | 22:00:59,890 | INFO  | main | entities.managers.SFSRoomManager |     | Room created: { Zone: --=={{{ AdminZone }}}==-- }, [ Room: AdminRoom, Id: 1, Group: default, isGame: false ]
+28 Jan 2015 | 22:00:59,903 | INFO  | main | v2.core.AdminToolService |     | AdminTool Service started
+28 Jan 2015 | 22:01:00,175 | INFO  | SFSWorker:Sys:1 | smartfoxserver.v2.SmartFoxServer |     | Listening Sockets: { 0.0.0.0:9933, (Tcp) } { 127.0.0.1:9933, (Udp) } 
+28 Jan 2015 | 22:01:00,176 | INFO  | SFSWorker:Sys:1 | smartfoxserver.v2.SmartFoxServer |     |  
+ _____ _____ _____    ___ __ __ 
+|   __|   __|   __|  |_  |  |  |
+|__   |   __|__   |  |  _|-   -|
+|_____|__|  |_____|  |___|__|__|                                         
+ _____ _____ _____ ____  __ __ 
+| __  |   __|  _  |    \|  |  |
+|    -|   __|     |  |  |_   _|
+|__|__|_____|__|__|____/  |_|  
+[ 2.9.0 ] 
+
+28 Jan 2015 | 22:01:00,177 | INFO  | SFSWorker:Sys:1 | smartfoxserver.v2.SmartFoxServer |     | SmartFoxServer 2X (2.9.0) READY!
+28 Jan 2015 | 22:01:02,870 | INFO  | main | bluebox.v3.SessionFilter |     | BlueBox-2X Service (3.0.0) ready.
+28 Jan 2015 | 22:01:27,849 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session created: { Id: 1, Type: DEFAULT, Logged: No, IP: 0 } on Server port: 9933 <---> 0
+28 Jan 2015 | 22:01:27,945 | INFO  | SFSWorker:Ext:3 | v2.api.SFSApi |     | User login: { Zone: --=={{{ AdminZone }}}==-- }, ( User Name: sfsadmin, Id: 0, Priv: 0, Sess: 0 ) , Type: Flash PlugIn:WIN 16,0,0,296
+28 Jan 2015 | 22:01:27,973 | INFO  | SFSWorker:Ext:4 | v2.api.SFSApi |     | Room joined: [ Room: AdminRoom, Id: 1, Group: default, isGame: false ], { Zone: --=={{{ AdminZone }}}==-- }, ( User Name: sfsadmin, Id: 0, Priv: 0, Sess: 0 ) , asSpect: false
+28 Jan 2015 | 22:03:02,019 | INFO  | Thread-4 | entities.managers.SFSExtensionManager |     | Reloading extension: { Ext: mylife, Type: JAVA, Lev: ZONE, { Zone: mylife }, {} }
+28 Jan 2015 | 22:08:36,818 | INFO  | Thread-4 | entities.managers.SFSExtensionManager |     | Reloading extension: { Ext: mylife, Type: JAVA, Lev: ZONE, { Zone: mylife }, {} }
+28 Jan 2015 | 22:08:36,822 | ERROR | Thread-4 | entities.managers.SFSExtensionManager |     | com.smartfoxserver.v2.exceptions.SFSExtensionException:
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Exception: com.smartfoxserver.v2.exceptions.SFSExtensionException
+Message: Class not found: my.life.MylifeExtension
+Description: An error occurred while reloading extension: mylife in { Zone: mylife }
+The new extension might not function properly.
++--- --- ---+
+Stack Trace:
++--- --- ---+
+com.smartfoxserver.v2.entities.managers.SFSExtensionManager.createJavaExtension(SFSExtensionManager.java:358)
+com.smartfoxserver.v2.entities.managers.SFSExtensionManager.createExtension(SFSExtensionManager.java:260)
+com.smartfoxserver.v2.entities.managers.SFSExtensionManager.reloadExtension(SFSExtensionManager.java:534)
+com.smartfoxserver.v2.entities.managers.SFSExtensionManager$ExtensionFileChangeListener.fileChanged(SFSExtensionManager.java:111)
+org.apache.commons.vfs.events.ChangedEvent.notify(ChangedEvent.java:34)
+org.apache.commons.vfs.provider.AbstractFileSystem.fireEvent(AbstractFileSystem.java:519)
+org.apache.commons.vfs.provider.AbstractFileSystem.fireFileChanged(AbstractFileSystem.java:487)
+org.apache.commons.vfs.impl.DefaultFileMonitor$FileMonitorAgent.check(DefaultFileMonitor.java:647)
+org.apache.commons.vfs.impl.DefaultFileMonitor$FileMonitorAgent.access$200(DefaultFileMonitor.java:418)
+org.apache.commons.vfs.impl.DefaultFileMonitor.run(DefaultFileMonitor.java:373)
+java.lang.Thread.run(Unknown Source)
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+28 Jan 2015 | 22:08:38,828 | INFO  | Thread-4 | entities.managers.SFSExtensionManager |     | Reloading extension: { Ext: mylife, Type: JAVA, Lev: ZONE, { Zone: mylife }, {} }
+28 Jan 2015 | 22:08:38,837 | INFO  | Thread-4 | Extensions |     | {mylife}: 
+
+********Mylife main extension init)********
+
+ 
+28 Jan 2015 | 22:08:54,519 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | Boot sequence starts...
+28 Jan 2015 | 22:08:54,534 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | 
+ _____ _____ _____    ___ __ __    _____ _____ _____ _____ 
+|   __|   __|   __|  |_  |  |  |  | __  |     |     |_   _|
+|__   |   __|__   |  |  _|-   -|  | __ -|  |  |  |  | | |  
+|_____|__|  |_____|  |___|__|__|  |_____|_____|_____| |_|
+
+28 Jan 2015 | 22:08:55,141 | INFO  | main | v2.core.SFSEventManager |     | AnonymousService-1 initalized
+28 Jan 2015 | 22:08:55,184 | INFO  | main | vfs.impl.DefaultFileReplicator |     | Using "C:\Users\WoWoX~\AppData\Local\Temp\vfs_cache" as temporary files store.
+28 Jan 2015 | 22:08:55,261 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | License loaded:
+
+===================================
+LICENSE DETAILS
+-----------------------------------
+Type            : Community Edition
+Max users       : 100
+===================================
+
+28 Jan 2015 | 22:08:55,263 | INFO  | main | entities.managers.SFSBannedUserStorage |     | BanUserStorage initialized
+28 Jan 2015 | 22:08:55,264 | WARN  | main | entities.managers.SFSBannedUserManager |     | Failure loading the BannedUser DB: java.io.EOFException
+28 Jan 2015 | 22:08:55,271 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | Protocol Type is: BINARY
+28 Jan 2015 | 22:08:55,274 | INFO  | main | v2.config.DefaultConfigLoader |     | Loading: zones\BasicExamples.zone.xml
+28 Jan 2015 | 22:08:55,317 | INFO  | main | v2.config.DefaultConfigLoader |     | Loading: zones\mylife.zone.xml
+28 Jan 2015 | 22:08:55,352 | INFO  | main | entities.managers.SFSZoneManager |     | 
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ >> Zone: BasicExamples 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+28 Jan 2015 | 22:08:55,397 | INFO  | main | entities.managers.SFSRoomManager |     | Room created: { Zone: BasicExamples }, [ Room: The Lobby, Id: 0, Group: default, isGame: false ]
+28 Jan 2015 | 22:08:55,399 | INFO  | main | entities.managers.SFSZoneManager |     | 
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ >> Zone: mylife 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+28 Jan 2015 | 22:08:55,411 | INFO  | main | Extensions |     | {mylife}: 
+
+********Mylife main extension init)********
+
+ 
+28 Jan 2015 | 22:08:55,417 | INFO  | main | entities.managers.SFSRoomManager |     | Room created: { Zone: --=={{{ AdminZone }}}==-- }, [ Room: AdminRoom, Id: 1, Group: default, isGame: false ]
+28 Jan 2015 | 22:08:55,432 | INFO  | main | v2.core.AdminToolService |     | AdminTool Service started
+28 Jan 2015 | 22:08:55,678 | INFO  | SFSWorker:Sys:1 | smartfoxserver.v2.SmartFoxServer |     | Listening Sockets: { 0.0.0.0:9933, (Tcp) } { 127.0.0.1:9933, (Udp) } 
+28 Jan 2015 | 22:08:55,679 | INFO  | SFSWorker:Sys:1 | smartfoxserver.v2.SmartFoxServer |     |  
+ _____ _____ _____    ___ __ __ 
+|   __|   __|   __|  |_  |  |  |
+|__   |   __|__   |  |  _|-   -|
+|_____|__|  |_____|  |___|__|__|                                         
+ _____ _____ _____ ____  __ __ 
+| __  |   __|  _  |    \|  |  |
+|    -|   __|     |  |  |_   _|
+|__|__|_____|__|__|____/  |_|  
+[ 2.9.0 ] 
+
+28 Jan 2015 | 22:08:55,680 | INFO  | SFSWorker:Sys:1 | smartfoxserver.v2.SmartFoxServer |     | SmartFoxServer 2X (2.9.0) READY!
+28 Jan 2015 | 22:08:57,790 | INFO  | main | bluebox.v3.SessionFilter |     | BlueBox-2X Service (3.0.0) ready.
+28 Jan 2015 | 22:09:11,294 | INFO  | Thread-4 | entities.managers.SFSExtensionManager |     | Reloading extension: { Ext: mylife, Type: JAVA, Lev: ZONE, { Zone: mylife }, {} }
+28 Jan 2015 | 22:09:11,297 | INFO  | Thread-4 | Extensions |     | {mylife}: 
+
+********Mylife main extension init)********
+
+ 
+28 Jan 2015 | 22:55:01,846 | INFO  | Thread-4 | entities.managers.SFSExtensionManager |     | Reloading extension: { Ext: mylife, Type: JAVA, Lev: ZONE, { Zone: mylife }, {} }
+28 Jan 2015 | 22:55:01,895 | INFO  | Thread-4 | Extensions |     | {mylife}: 
+
+********Mylife main extension init)********
+
+ 
+28 Jan 2015 | 22:55:55,685 | INFO  | pool-1-thread-3 | util.stats.CCULoggerTask |     | CCU stats: { Zone: mylife }, CCU: 0/0
+28 Jan 2015 | 22:55:55,686 | INFO  | pool-1-thread-3 | util.stats.CCULoggerTask |     | CCU stats: { Zone: --=={{{ AdminZone }}}==-- }, CCU: 0/0
+28 Jan 2015 | 22:55:55,687 | INFO  | pool-1-thread-3 | util.stats.CCULoggerTask |     | CCU stats: { Zone: BasicExamples }, CCU: 0/0
+28 Jan 2015 | 22:55:55,688 | INFO  | pool-1-thread-3 | util.stats.CCULoggerTask |     | CCU stats: CCU: 0/0

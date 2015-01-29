@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+package my.life;
+
+import com.smartfoxserver.v2.extensions.SFSExtension;
+
+/**
+ * @author WoWoX~
+ *
+ */
+public class MyLifeExtension extends SFSExtension
+{
+	public void init()
+	{
+		
+	}
+	
+	public void destroy()
+	{
+		super.destroy();
+	}
+
+}

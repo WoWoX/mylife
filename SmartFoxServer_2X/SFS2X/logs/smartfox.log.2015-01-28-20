@@ -1,0 +1,53 @@
+28 Jan 2015 | 20:42:02,985 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | Boot sequence starts...
+28 Jan 2015 | 20:42:02,985 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | 
+ _____ _____ _____    ___ __ __    _____ _____ _____ _____ 
+|   __|   __|   __|  |_  |  |  |  | __  |     |     |_   _|
+|__   |   __|__   |  |  _|-   -|  | __ -|  |  |  |  | | |  
+|_____|__|  |_____|  |___|__|__|  |_____|_____|_____| |_|
+
+28 Jan 2015 | 20:42:03,603 | INFO  | main | v2.core.SFSEventManager |     | AnonymousService-1 initalized
+28 Jan 2015 | 20:42:03,639 | INFO  | main | vfs.impl.DefaultFileReplicator |     | Using "C:\Users\WoWoX~\AppData\Local\Temp\vfs_cache" as temporary files store.
+28 Jan 2015 | 20:42:03,723 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | License loaded:
+
+===================================
+LICENSE DETAILS
+-----------------------------------
+Type            : Community Edition
+Max users       : 100
+===================================
+
+28 Jan 2015 | 20:42:03,723 | INFO  | main | entities.managers.SFSBannedUserStorage |     | BanUserStorage initialized
+28 Jan 2015 | 20:42:03,723 | INFO  | main | entities.managers.SFSBannedUserManager |     | No BannedUser data available, starting with a clean DB.
+28 Jan 2015 | 20:42:03,739 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | Protocol Type is: BINARY
+28 Jan 2015 | 20:42:03,739 | INFO  | main | v2.config.DefaultConfigLoader |     | Loading: zones\BasicExamples.zone.xml
+28 Jan 2015 | 20:42:03,770 | INFO  | main | entities.managers.SFSZoneManager |     | 
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ >> Zone: BasicExamples 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+28 Jan 2015 | 20:42:03,823 | INFO  | main | entities.managers.SFSRoomManager |     | Room created: { Zone: BasicExamples }, [ Room: The Lobby, Id: 0, Group: default, isGame: false ]
+28 Jan 2015 | 20:42:03,823 | INFO  | main | entities.managers.SFSRoomManager |     | Room created: { Zone: --=={{{ AdminZone }}}==-- }, [ Room: AdminRoom, Id: 1, Group: default, isGame: false ]
+28 Jan 2015 | 20:42:03,839 | INFO  | main | v2.core.AdminToolService |     | AdminTool Service started
+28 Jan 2015 | 20:42:04,112 | INFO  | SFSWorker:Sys:1 | smartfoxserver.v2.SmartFoxServer |     | Listening Sockets: { 0.0.0.0:9933, (Tcp) } { 127.0.0.1:9933, (Udp) } 
+28 Jan 2015 | 20:42:04,113 | INFO  | SFSWorker:Sys:1 | smartfoxserver.v2.SmartFoxServer |     |  
+ _____ _____ _____    ___ __ __ 
+|   __|   __|   __|  |_  |  |  |
+|__   |   __|__   |  |  _|-   -|
+|_____|__|  |_____|  |___|__|__|                                         
+ _____ _____ _____ ____  __ __ 
+| __  |   __|  _  |    \|  |  |
+|    -|   __|     |  |  |_   _|
+|__|__|_____|__|__|____/  |_|  
+[ 2.9.0 ] 
+
+28 Jan 2015 | 20:42:04,114 | INFO  | SFSWorker:Sys:1 | smartfoxserver.v2.SmartFoxServer |     | SmartFoxServer 2X (2.9.0) READY!
+28 Jan 2015 | 20:42:07,619 | INFO  | main | bluebox.v3.SessionFilter |     | BlueBox-2X Service (3.0.0) ready.
+28 Jan 2015 | 20:48:28,549 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session created: { Id: 1, Type: DEFAULT, Logged: No, IP: 0 } on Server port: 9933 <---> 0
+28 Jan 2015 | 20:48:28,582 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session removed: { Id: 1, Type: DEFAULT, Logged: No, IP: 0 }
+28 Jan 2015 | 20:48:28,599 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session created: { Id: 2, Type: DEFAULT, Logged: No, IP: 0 } on Server port: 9933 <---> 0
+28 Jan 2015 | 20:48:28,683 | INFO  | SFSWorker:Ext:3 | v2.api.SFSApi |     | User login: { Zone: --=={{{ AdminZone }}}==-- }, ( User Name: sfsadmin, Id: 0, Priv: 0, Sess: 0 ) , Type: Flash PlugIn:WIN 16,0,0,296
+28 Jan 2015 | 20:48:28,690 | INFO  | SFSWorker:Ext:4 | v2.api.SFSApi |     | Room joined: [ Room: AdminRoom, Id: 1, Group: default, isGame: false ], { Zone: --=={{{ AdminZone }}}==-- }, ( User Name: sfsadmin, Id: 0, Priv: 0, Sess: 0 ) , asSpect: false
+28 Jan 2015 | 20:55:04,122 | INFO  | pool-1-thread-2 | util.stats.CCULoggerTask |     | CCU stats: { Zone: --=={{{ AdminZone }}}==-- }, CCU: 0/1
+28 Jan 2015 | 20:55:04,123 | INFO  | pool-1-thread-2 | util.stats.CCULoggerTask |     | CCU stats: { Zone: BasicExamples }, CCU: 0/0
+28 Jan 2015 | 20:55:04,125 | INFO  | pool-1-thread-2 | util.stats.CCULoggerTask |     | CCU stats: CCU: 0/1

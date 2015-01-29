@@ -1,0 +1,60 @@
+/**
+ * 
+ */
+package my.life;
+
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.Map.Entry;
+import java.util.Set;
+
+import com.smartfoxserver.v2.entities.User;
+import com.smartfoxserver.v2.entities.data.ISFSArray;
+import com.smartfoxserver.v2.entities.data.ISFSObject;
+import com.smartfoxserver.v2.entities.data.SFSDataWrapper;
+import com.smartfoxserver.v2.entities.data.SFSObject;
+import com.smartfoxserver.v2.extensions.BaseClientRequestHandler;
+import com.smartfoxserver.v2.extensions.SFSExtension;
+
+/**
+ * @author WoWoX~
+ *
+ */
+public class MylifeExtension extends SFSExtension 
+{
+	public void init()
+	{
+		trace("\n\n********Mylife main extension init)********\n\n");
+	}
+
+	public void destroy()
+	{
+		trace("\n\b********Mylife main extension destroyed*********\n\n");
+		super.destroy();
+	}
+
+	
+	
+	//Request handler
+	public class RequestHandler extends BaseClientRequestHandler
+	{
+
+		//Handle client requests
+		public void handleClientRequest(User sender, ISFSObject params) 
+		{
+			// TODO Auto-generated method stub
+		if (params.getInt("cmd").equals(1)) 
+		{
+				int received = sender.getId();
+				ISFSObject resObj = SFSObject.newInstance(); 
+				resObj.putInt("res", received + 1);
+				send("resTest",resObj,sender);
+		}
+		
+		
+	}
+
+		
+}
+
+}

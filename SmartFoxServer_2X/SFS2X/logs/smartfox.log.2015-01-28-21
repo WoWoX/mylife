@@ -1,0 +1,87 @@
+28 Jan 2015 | 21:19:39,422 | INFO  | Thread-1 | entities.managers.SFSZoneManager |     | BuddyList saveAll...
+28 Jan 2015 | 21:19:39,422 | WARN  | SFS2X ShutdownHook | v2.core.SFSShutdownHook |     | SFS2X is shutting down. The process may take a few seconds...
+28 Jan 2015 | 21:20:50,127 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | Boot sequence starts...
+28 Jan 2015 | 21:20:50,142 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | 
+ _____ _____ _____    ___ __ __    _____ _____ _____ _____ 
+|   __|   __|   __|  |_  |  |  |  | __  |     |     |_   _|
+|__   |   __|__   |  |  _|-   -|  | __ -|  |  |  |  | | |  
+|_____|__|  |_____|  |___|__|__|  |_____|_____|_____| |_|
+
+28 Jan 2015 | 21:20:50,752 | INFO  | main | v2.core.SFSEventManager |     | AnonymousService-1 initalized
+28 Jan 2015 | 21:20:50,787 | INFO  | main | vfs.impl.DefaultFileReplicator |     | Using "C:\Users\WoWoX~\AppData\Local\Temp\vfs_cache" as temporary files store.
+28 Jan 2015 | 21:20:50,867 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | License loaded:
+
+===================================
+LICENSE DETAILS
+-----------------------------------
+Type            : Community Edition
+Max users       : 100
+===================================
+
+28 Jan 2015 | 21:20:50,872 | INFO  | main | entities.managers.SFSBannedUserStorage |     | BanUserStorage initialized
+28 Jan 2015 | 21:20:50,872 | WARN  | main | entities.managers.SFSBannedUserManager |     | Failure loading the BannedUser DB: java.io.EOFException
+28 Jan 2015 | 21:20:50,877 | INFO  | main | smartfoxserver.v2.SmartFoxServer |     | Protocol Type is: BINARY
+28 Jan 2015 | 21:20:50,882 | INFO  | main | v2.config.DefaultConfigLoader |     | Loading: zones\BasicExamples.zone.xml
+28 Jan 2015 | 21:20:50,932 | INFO  | main | v2.config.DefaultConfigLoader |     | Loading: zones\mylife.zone.xml
+28 Jan 2015 | 21:20:50,967 | INFO  | main | entities.managers.SFSZoneManager |     | 
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ >> Zone: BasicExamples 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+28 Jan 2015 | 21:20:51,012 | INFO  | main | entities.managers.SFSRoomManager |     | Room created: { Zone: BasicExamples }, [ Room: The Lobby, Id: 0, Group: default, isGame: false ]
+28 Jan 2015 | 21:20:51,012 | INFO  | main | entities.managers.SFSZoneManager |     | 
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ >> Zone: mylife 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+28 Jan 2015 | 21:20:51,022 | INFO  | main | entities.managers.SFSRoomManager |     | Room created: { Zone: --=={{{ AdminZone }}}==-- }, [ Room: AdminRoom, Id: 1, Group: default, isGame: false ]
+28 Jan 2015 | 21:20:51,037 | INFO  | main | v2.core.AdminToolService |     | AdminTool Service started
+28 Jan 2015 | 21:20:51,262 | INFO  | SFSWorker:Sys:1 | smartfoxserver.v2.SmartFoxServer |     | Listening Sockets: { 0.0.0.0:9933, (Tcp) } { 127.0.0.1:9933, (Udp) } 
+28 Jan 2015 | 21:20:51,264 | INFO  | SFSWorker:Sys:1 | smartfoxserver.v2.SmartFoxServer |     |  
+ _____ _____ _____    ___ __ __ 
+|   __|   __|   __|  |_  |  |  |
+|__   |   __|__   |  |  _|-   -|
+|_____|__|  |_____|  |___|__|__|                                         
+ _____ _____ _____ ____  __ __ 
+| __  |   __|  _  |    \|  |  |
+|    -|   __|     |  |  |_   _|
+|__|__|_____|__|__|____/  |_|  
+[ 2.9.0 ] 
+
+28 Jan 2015 | 21:20:51,264 | INFO  | SFSWorker:Sys:1 | smartfoxserver.v2.SmartFoxServer |     | SmartFoxServer 2X (2.9.0) READY!
+28 Jan 2015 | 21:20:53,668 | INFO  | main | bluebox.v3.SessionFilter |     | BlueBox-2X Service (3.0.0) ready.
+28 Jan 2015 | 21:28:02,911 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session created: { Id: 1, Type: DEFAULT, Logged: No, IP: 0 } on Server port: 9933 <---> 0
+28 Jan 2015 | 21:28:02,989 | INFO  | SFSWorker:Ext:3 | v2.api.SFSApi |     | User login: { Zone: --=={{{ AdminZone }}}==-- }, ( User Name: sfsadmin, Id: 0, Priv: 0, Sess: 0 ) , Type: Flash PlugIn:WIN 16,0,0,296
+28 Jan 2015 | 21:28:02,998 | INFO  | SFSWorker:Ext:4 | v2.api.SFSApi |     | Room joined: [ Room: AdminRoom, Id: 1, Group: default, isGame: false ], { Zone: --=={{{ AdminZone }}}==-- }, ( User Name: sfsadmin, Id: 0, Priv: 0, Sess: 0 ) , asSpect: false
+28 Jan 2015 | 21:28:18,666 | WARN  | SFSWorker:Ext:2 | Extensions |     | {Admin}: {ExtensionManager}: Module access prevented; remove file config/ExtensionManagerLock.txt to allow module usage 
+28 Jan 2015 | 21:30:26,308 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session created: { Id: 2, Type: DEFAULT, Logged: No, IP: 127.0.0.1:56134 } on Server port: 9933 <---> 56134
+28 Jan 2015 | 21:30:26,321 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session removed: { Id: 2, Type: DEFAULT, Logged: No, IP: 127.0.0.1:56134 }
+28 Jan 2015 | 21:30:26,340 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session created: { Id: 3, Type: DEFAULT, Logged: No, IP: 127.0.0.1:56135 } on Server port: 9933 <---> 56135
+28 Jan 2015 | 21:30:33,211 | INFO  | SFSWorker:Sys:3 | v2.api.SFSApi |     | User login: { Zone: BasicExamples }, ( User Name: WoWoX, Id: 1, Priv: 0, Sess: 127.0.0.1:56135 ) , Type: FlashPlayer:PlugIn:WIN 16,0,0,296
+28 Jan 2015 | 21:30:33,307 | INFO  | SFSWorker:Sys:4 | v2.api.SFSApi |     | Room joined: [ Room: The Lobby, Id: 0, Group: default, isGame: false ], { Zone: BasicExamples }, ( User Name: WoWoX, Id: 1, Priv: 0, Sess: 127.0.0.1:56135 ) , asSpect: false
+28 Jan 2015 | 21:33:13,354 | INFO  | SFSWorker:Ext:3 | v2.api.SFSApi |     | Kicking user: ( User Name: WoWoX, Id: 1, Priv: 0, Sess: 127.0.0.1:56135 ) 
+28 Jan 2015 | 21:33:13,359 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session removed: { Id: 3, Type: DEFAULT, Logged: Yes, IP: 127.0.0.1:56135 }
+28 Jan 2015 | 21:33:13,361 | INFO  | SFSWorker:Sys:3 | v2.api.SFSApi |     | User disconnected: { Zone: BasicExamples }, ( User Name: WoWoX, Id: 1, Priv: 0, Sess: 127.0.0.1:56135 ) , SessionLen: 160151, Type: FlashPlayer:PlugIn:WIN 16,0,0,296
+28 Jan 2015 | 21:33:30,106 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session created: { Id: 4, Type: DEFAULT, Logged: No, IP: 127.0.0.1:56151 } on Server port: 9933 <---> 56151
+28 Jan 2015 | 21:33:30,118 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session removed: { Id: 4, Type: DEFAULT, Logged: No, IP: 127.0.0.1:56151 }
+28 Jan 2015 | 21:33:30,140 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session created: { Id: 5, Type: DEFAULT, Logged: No, IP: 127.0.0.1:56152 } on Server port: 9933 <---> 56152
+28 Jan 2015 | 21:33:31,553 | INFO  | SFSWorker:Sys:3 | v2.api.SFSApi |     | User login: { Zone: BasicExamples }, ( User Name: wowox, Id: 2, Priv: 0, Sess: 127.0.0.1:56152 ) , Type: FlashPlayer:PlugIn:WIN 16,0,0,296
+28 Jan 2015 | 21:33:31,683 | INFO  | SFSWorker:Sys:1 | v2.api.SFSApi |     | Room joined: [ Room: The Lobby, Id: 0, Group: default, isGame: false ], { Zone: BasicExamples }, ( User Name: wowox, Id: 2, Priv: 0, Sess: 127.0.0.1:56152 ) , asSpect: false
+28 Jan 2015 | 21:34:01,346 | INFO  | SFSWorker:Ext:2 | entities.managers.SFSBannedUserManager |     | User: wowox is banned. Reason: 
+28 Jan 2015 | 21:34:03,534 | WARN  | SFSWorker:Sys:1 | controllers.v290.SystemReqController |     | System Request rejected: ( User Name: wowox, Id: 2, Priv: 0, Sess: 127.0.0.1:56152 ) , Client is marked for kicking.
+28 Jan 2015 | 21:34:06,357 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session removed: { Id: 5, Type: DEFAULT, Logged: Yes, IP: 127.0.0.1:56152 }
+28 Jan 2015 | 21:34:06,361 | INFO  | SFSWorker:Sys:3 | v2.api.SFSApi |     | User disconnected: { Zone: BasicExamples }, ( User Name: wowox, Id: 2, Priv: 0, Sess: 127.0.0.1:56152 ) , SessionLen: 34807, Type: FlashPlayer:PlugIn:WIN 16,0,0,296
+28 Jan 2015 | 21:34:10,887 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session created: { Id: 6, Type: DEFAULT, Logged: No, IP: 127.0.0.1:56158 } on Server port: 9933 <---> 56158
+28 Jan 2015 | 21:34:10,898 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session removed: { Id: 6, Type: DEFAULT, Logged: No, IP: 127.0.0.1:56158 }
+28 Jan 2015 | 21:34:10,920 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session created: { Id: 7, Type: DEFAULT, Logged: No, IP: 127.0.0.1:56159 } on Server port: 9933 <---> 56159
+28 Jan 2015 | 21:34:13,212 | INFO  | SFSWorker:Sys:1 | v2.api.SFSApi |     | Login error: This user name is banned: wowox. Requested by: { Id: 7, Type: DEFAULT, Logged: No, IP: 127.0.0.1:56159 }
+28 Jan 2015 | 21:34:53,050 | INFO  | SFSWorker:Sys:1 | v2.api.SFSApi |     | User login: { Zone: BasicExamples }, ( User Name: wowox, Id: 3, Priv: 0, Sess: 127.0.0.1:56159 ) , Type: FlashPlayer:PlugIn:WIN 16,0,0,296
+28 Jan 2015 | 21:34:53,141 | INFO  | SFSWorker:Sys:2 | v2.api.SFSApi |     | Room joined: [ Room: The Lobby, Id: 0, Group: default, isGame: false ], { Zone: BasicExamples }, ( User Name: wowox, Id: 3, Priv: 0, Sess: 127.0.0.1:56159 ) , asSpect: false
+28 Jan 2015 | 21:40:01,298 | INFO  | SocketReader | bitswarm.sessions.DefaultSessionManager |     | Session removed: { Id: 7, Type: DEFAULT, Logged: Yes, IP: 127.0.0.1:56159 }
+28 Jan 2015 | 21:40:01,300 | INFO  | SFSWorker:Sys:1 | v2.api.SFSApi |     | User disconnected: { Zone: BasicExamples }, ( User Name: wowox, Id: 3, Priv: 0, Sess: 127.0.0.1:56159 ) , SessionLen: 308250, Type: FlashPlayer:PlugIn:WIN 16,0,0,296
+28 Jan 2015 | 21:55:51,273 | INFO  | pool-1-thread-4 | util.stats.CCULoggerTask |     | CCU stats: { Zone: mylife }, CCU: 0/0
+28 Jan 2015 | 21:55:51,274 | INFO  | pool-1-thread-4 | util.stats.CCULoggerTask |     | CCU stats: { Zone: --=={{{ AdminZone }}}==-- }, CCU: 0/1
+28 Jan 2015 | 21:55:51,274 | INFO  | pool-1-thread-4 | util.stats.CCULoggerTask |     | CCU stats: { Zone: BasicExamples }, CCU: 0/1
+28 Jan 2015 | 21:55:51,274 | INFO  | pool-1-thread-4 | util.stats.CCULoggerTask |     | CCU stats: CCU: 0/2
