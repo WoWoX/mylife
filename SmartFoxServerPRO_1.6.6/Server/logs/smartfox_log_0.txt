@@ -1,10 +1,12 @@
-2015/01/31 21:40:35.834 - [ INFO ] [id: 10] (SmartFoxServer.bootH2Engine): Starting h2 engine...
-2015/01/31 21:40:36.865 - [ INFO ] [id: 10] (DefaultBuddyListPersister.init): Default Buddy List Persister <INITED>
-2015/01/31 21:40:37.049 - [ INFO ] [id: 10] (ExtensionHandler.createExtension): Zone Extension [ mylife ] created, for zone:mylife
-2015/01/31 21:40:37.065 - [ INFO ] [id: 10] (SmartFoxServer.setupTaskScheduler): [TaskScheduler] ... started ::
-2015/01/31 21:40:37.066 - [ INFO ] [id: 10] (SmartFoxServer.run): [BlueBoxHandler]... started :: 
-2015/01/31 21:40:37.066 - [ INFO ] [id: 10] (SmartFoxServer.run): [EventWriter] ..... started :: 1 thread(s)
-2015/01/31 21:40:37.066 - [ INFO ] [id: 10] (SmartFoxServer.run): [SystemHandler] ... started :: 1 thread(s)
-2015/01/31 21:40:37.066 - [ INFO ] [id: 10] (SmartFoxServer.run): [ExtensionHandler]. started :: 1 thread(s)
-2015/01/31 21:40:37.069 - [ INFO ] [id: 10] (SmartFoxServer.run): [DeadChannelsPolicy: strict]
-2015/01/31 21:40:37.072 - [ INFO ] [id: 10] (SmartFoxServer.run): Server is up and running!
+2015/01/31 21:57:25.813 - [ INFO ] [id: 10] (SmartFoxServer.bootH2Engine): Starting h2 engine...
+2015/01/31 21:57:26.797 - [ INFO ] [id: 10] (DefaultBuddyListPersister.init): Default Buddy List Persister <INITED>
+2015/01/31 21:57:26.995 - [ INFO ] [id: 10] (ExtensionHandler.createExtension): Zone Extension [ mylife ] created, for zone:mylife
+2015/01/31 21:57:27.018 - [ INFO ] [id: 10] (SmartFoxServer.setupTaskScheduler): [TaskScheduler] ... started ::
+2015/01/31 21:57:27.019 - [ INFO ] [id: 10] (SmartFoxServer.run): [BlueBoxHandler]... started :: 
+2015/01/31 21:57:27.019 - [ INFO ] [id: 10] (SmartFoxServer.run): [EventWriter] ..... started :: 1 thread(s)
+2015/01/31 21:57:27.019 - [ INFO ] [id: 10] (SmartFoxServer.run): [SystemHandler] ... started :: 1 thread(s)
+2015/01/31 21:57:27.020 - [ INFO ] [id: 10] (SmartFoxServer.run): [ExtensionHandler]. started :: 1 thread(s)
+2015/01/31 21:57:27.021 - [ INFO ] [id: 10] (SmartFoxServer.run): [DeadChannelsPolicy: strict]
+2015/01/31 21:57:27.021 - [ INFO ] [id: 10] (SmartFoxServer.run): Server is up and running!
+2015/01/31 21:57:43.593 - [ INFO ] [id: 12] (BanUserTaskHandler.doTask): User wowox has been banned, ip = 127.0.0.1
+2015/01/31 21:58:03.588 - [ INFO ] [id: 12] (KickUserTaskHandler.doTask): User wowox has been kicked.
