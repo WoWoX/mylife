@@ -1,40 +1,10 @@
-2015/01/29 13:16:51.442 - [ INFO ] [id: 10] (SmartFoxServer.bootH2Engine): Starting h2 engine...
-2015/01/29 13:16:52.629 - [ INFO ] [id: 10] (DefaultBuddyListPersister.init): Default Buddy List Persister <INITED>
-2015/01/29 13:16:52.957 - [ INFO ] [id: 10] (ExtensionHandler.createExtension): Zone Extension [ json ] created, for zone:simpleChat
-2015/01/29 13:16:52.963 - [ INFO ] [id: 10] (DefaultBuddyListPersister.init): Default Buddy List Persister <INITED>
-2015/01/29 13:16:53.090 - [ INFO ] [id: 10] (ExtensionHandler.createExtension): Zone Extension [ dbTest ] created, for zone:dbZone
-2015/01/29 13:16:53.183 - [ INFO ] [id: 10] (ExtensionHandler.createExtension): Zone Extension [ dbTestAdv ] created, for zone:dbZone
-2015/01/29 13:16:53.311 - [ INFO ] [id: 10] (ExtensionHandler.createExtension): Zone Extension [ simpleExt ] created, for zone:dbZone
-2015/01/29 13:16:53.428 - [ INFO ] [id: 10] (ExtensionHandler.createExtension): Zone Extension [ loginEx ] created, for zone:loginZone
-2015/01/29 13:16:53.559 - [ INFO ] [id: 10] (ExtensionHandler.createExtension): Zone Extension [ slogin ] created, for zone:slogin
-2015/01/29 13:16:53.676 - [ INFO ] [id: 10] (ExtensionHandler.createExtension): Zone Extension [ pixel ] created, for zone:pixel
-2015/01/29 13:16:53.776 - [ INFO ] [id: 10] (ExtensionHandler.createExtension): Zone Extension [ Letters ] created, for zone:letters
-2015/01/29 13:16:53.808 - [ INFO ] [id: 10] (DefaultBuddyListPersister.init): Default Buddy List Persister <INITED>
-2015/01/29 13:16:53.925 - [ INFO ] [id: 10] (ExtensionHandler.createExtension): Zone Extension [ smsg ] created, for zone:messenger
-2015/01/29 13:16:53.997 - [ INFO ] [id: 10] (ExtensionHandler.createExtension): Zone Extension [ imgman ] created, for zone:imgMan
-2015/01/29 13:16:54.217 - [ INFO ] [id: 10] (ExtensionHandler.createExtension): Zone Extension [ h2db_ext ] created, for zone:h2dbzone
-2015/01/29 13:16:54.309 - [ INFO ] [id: 10] (ExtensionHandler.createExtension): Zone Extension [ loader ] created, for zone:sloader
-2015/01/29 13:16:54.313 - [ INFO ] [id: 10] (ExtensionHandler.createExtension): Zone Extension [ __$RedBox$__ ] created, for zone:SmartVideoClipPlayer
-2015/01/29 13:16:54.318 - [ INFO ] [id: 10] (Logger.logInfo): [RedBox] RedBox's AVChatManager initialized
-2015/01/29 13:16:54.325 - [ INFO ] [id: 10] (Logger.logInfo): [RedBox] RedBox's AVClipManager initialized and a/v clips list created (4 clips found)
-2015/01/29 13:16:54.326 - [ INFO ] [id: 10] (Logger.logInfo): [RedBox] Extension initialized
-2015/01/29 13:16:54.326 - [ INFO ] [id: 10] (DefaultBuddyListPersister.init): Default Buddy List Persister <INITED>
-2015/01/29 13:16:54.337 - [ INFO ] [id: 10] (ExtensionHandler.createExtension): Zone Extension [ smsg ] created, for zone:SmartMessengerAV
-2015/01/29 13:16:54.342 - [ INFO ] [id: 10] (ExtensionHandler.createExtension): Zone Extension [ __$RedBox$__ ] created, for zone:SmartMessengerAV
-2015/01/29 13:16:54.346 - [ INFO ] [id: 10] (Logger.logInfo): [RedBox] RedBox's AVChatManager initialized
-2015/01/29 13:16:54.350 - [ INFO ] [id: 10] (Logger.logInfo): [RedBox] RedBox's AVClipManager initialized and a/v clips list created (0 clips found)
-2015/01/29 13:16:54.351 - [ INFO ] [id: 10] (Logger.logInfo): [RedBox] Extension initialized
-2015/01/29 13:16:54.354 - [ INFO ] [id: 10] (ExtensionHandler.createExtension): Zone Extension [ __$RedBox$__ ] created, for zone:SmartChatAV
-2015/01/29 13:16:54.361 - [ INFO ] [id: 10] (Logger.logInfo): [RedBox] RedBox's AVChatManager initialized
-2015/01/29 13:16:54.366 - [ INFO ] [id: 10] (Logger.logInfo): [RedBox] RedBox's AVClipManager initialized and a/v clips list created (0 clips found)
-2015/01/29 13:16:54.367 - [ INFO ] [id: 10] (Logger.logInfo): [RedBox] Extension initialized
-2015/01/29 13:16:54.386 - [ INFO ] [id: 10] (SmartFoxServer.setupTaskScheduler): [TaskScheduler] ... started ::
-2015/01/29 13:16:54.387 - [ INFO ] [id: 10] (SmartFoxServer.run): [BlueBoxHandler]... started :: 
-2015/01/29 13:16:54.387 - [ INFO ] [id: 10] (SmartFoxServer.run): [EventWriter] ..... started :: 1 thread(s)
-2015/01/29 13:16:54.389 - [ INFO ] [id: 10] (SmartFoxServer.run): [SystemHandler] ... started :: 1 thread(s)
-2015/01/29 13:16:54.389 - [ INFO ] [id: 10] (SmartFoxServer.run): [ExtensionHandler]. started :: 1 thread(s)
-2015/01/29 13:16:54.390 - [ INFO ] [id: 10] (SmartFoxServer.run): [DeadChannelsPolicy: strict]
-2015/01/29 13:16:54.391 - [ INFO ] [id: 10] (SmartFoxServer.run): Server is up and running!
-2015/01/29 13:16:54.404 - [ INFO ] [id: 11] (Logger.logInfo): [RedBox] Internal event received: serverReady
-2015/01/29 13:16:54.406 - [ INFO ] [id: 11] (Logger.logInfo): [RedBox] Internal event received: serverReady
-2015/01/29 13:16:54.407 - [ INFO ] [id: 11] (Logger.logInfo): [RedBox] Internal event received: serverReady
+2015/01/31 21:40:35.834 - [ INFO ] [id: 10] (SmartFoxServer.bootH2Engine): Starting h2 engine...
+2015/01/31 21:40:36.865 - [ INFO ] [id: 10] (DefaultBuddyListPersister.init): Default Buddy List Persister <INITED>
+2015/01/31 21:40:37.049 - [ INFO ] [id: 10] (ExtensionHandler.createExtension): Zone Extension [ mylife ] created, for zone:mylife
+2015/01/31 21:40:37.065 - [ INFO ] [id: 10] (SmartFoxServer.setupTaskScheduler): [TaskScheduler] ... started ::
+2015/01/31 21:40:37.066 - [ INFO ] [id: 10] (SmartFoxServer.run): [BlueBoxHandler]... started :: 
+2015/01/31 21:40:37.066 - [ INFO ] [id: 10] (SmartFoxServer.run): [EventWriter] ..... started :: 1 thread(s)
+2015/01/31 21:40:37.066 - [ INFO ] [id: 10] (SmartFoxServer.run): [SystemHandler] ... started :: 1 thread(s)
+2015/01/31 21:40:37.066 - [ INFO ] [id: 10] (SmartFoxServer.run): [ExtensionHandler]. started :: 1 thread(s)
+2015/01/31 21:40:37.069 - [ INFO ] [id: 10] (SmartFoxServer.run): [DeadChannelsPolicy: strict]
+2015/01/31 21:40:37.072 - [ INFO ] [id: 10] (SmartFoxServer.run): Server is up and running!

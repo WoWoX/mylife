@@ -1,0 +1,70 @@
+package mylife;
+import java.nio.channels.SocketChannel;
+import java.util.*;
+
+import it.gotoandplay.smartfoxserver.db.*;
+import it.gotoandplay.smartfoxserver.data.*;
+import it.gotoandplay.smartfoxserver.exceptions.*;
+import it.gotoandplay.smartfoxserver.extensions.*;
+import it.gotoandplay.smartfoxserver.lib.ActionscriptObject;
+import it.gotoandplay.smartfoxserver.events.InternalEventObject;
+
+import org.json.JSONException;
+import org.json.JSONObject; 
+
+public class Mylife extends AbstractExtension
+{
+
+	public void init()
+	{
+		trace("Mylife.java Extension initialized");	
+	}
+
+	public void destroy()
+	{
+		trace("Extension destroyed");
+	}
+
+	public void handleRequest(String cmd, ActionscriptObject ao, User u, int fromRoom)
+	{
+		trace("\n***A request has been issued to Mylife by user: " + u.getName()+"***\n");
+		
+		if(cmd.equals("outputUserInfo"))
+		{
+			
+			trace("\n----------\nInformation being outputted for user: " + u.getUserId() + 
+					"\nIP address: " + u.getIpAddress() + "\nName: " + u.getName() +"\nRoom:" + u.getRoom()+
+					"\n----------\n"
+					);
+		}
+		else if(cmd.equals("checkLevel"))
+		{
+			trace("\ncheckLevel invoked - ModStatus for " + u.getName() + " : " + u.isModerator());
+		}
+		else
+		{
+			trace("\n\n**Error: Mylife requested with unknown command: " + cmd);
+			trace("\n**User " + u.getName() + "is being disconnected for invalid command request.");
+			ExtensionHelper.instance().disconnectUser(u);
+		}
+	}
+	
+	public void handleRequest(String cmd, JSONObject params, User serverUser, int fromRoom)
+	{
+	}
+	
+	public void handleRequest(String cmd, String params[], User serverUser, int fromRoom)
+	{
+	}
+
+	public void handleInternalEvent(InternalEventObject ieo)
+	{
+	}
+	
+	public Object handleInternalRequest(Object param)
+	{
+		return param;
+	}
+	
+
+}

@@ -2,4 +2,6 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="com.smartfoxserver.v2.extensions.BaseClientRequestHandler"/>
 <fullyQualifiedTypeName name="com.smartfoxserver.v2.entities.data.SFSObject"/>
+<fullyQualifiedTypeName name="it.gotoandplay.smartfoxserver.lib.SmartFoxLib"/>
+<fullyQualifiedTypeName name="it.gotoandplay.smartfoxserver.db.DataRow"/>
 </qualifiedTypeNameHistroy>

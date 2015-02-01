@@ -1,0 +1,299 @@
+package mylife;
+import java.nio.channels.SocketChannel;
+import java.util.*;
+
+import it.gotoandplay.smartfoxserver.db.*;
+import it.gotoandplay.smartfoxserver.data.*;
+import it.gotoandplay.smartfoxserver.exceptions.*;
+import it.gotoandplay.smartfoxserver.extensions.*;
+import it.gotoandplay.smartfoxserver.lib.ActionscriptObject;
+import it.gotoandplay.smartfoxserver.lib.SmartFoxLib;
+import it.gotoandplay.smartfoxserver.events.*;
+import it.gotoandplay.smartfoxserver.lib.ActionscriptObject;
+
+import org.json.JSONException;
+import org.json.JSONObject; 
+
+public class Mylife extends AbstractExtension
+{
+
+	private static final ExtensionHelper helper = ExtensionHelper.instance();
+	private static DbManager db = null;
+	private static Zone currZone = null;
+
+	public void init()
+	{
+		trace("Mylife.java Extension initialized");	
+
+		 ExtensionHelper helper = ExtensionHelper.instance();
+		
+		 Zone currZone = helper.getZone(this.getOwnerZone());
+		 
+		 db = currZone.dbManager;
+		 
+		
+		
+	}
+	
+
+	public void destroy()
+	{
+		trace("Extension destroyed");
+		 db = null;
+	}
+
+	public void handleRequest(String cmd, ActionscriptObject ao, User u, int fromRoom)
+	{
+		trace("\n***A request has been issued to Mylife by user: " + u.getName()+"***\n");
+		
+		
+		if(cmd.equals("outputUserInfo"))
+		{
+			
+			trace("\n----------\nInformation being outputted for user: " + u.getUserId() + 
+					"\nIP address: " + u.getIpAddress() + "\nName: " + u.getName() +"\nRoom:" + u.getRoom()+
+					"\n----------\n"
+					);
+		}
+		
+		else if(cmd.equals("checkLevel"))
+		{
+			trace("\ncheckLevel invoked - ModStatus for " + u.getName() + " : " + u.isModerator());
+		}
+			else
+			{
+				trace("\n\n**Error: Mylife requested with unknown command: " + cmd);
+				trace("\n**User " + u.getName() + " is being disconnected for invalid command request.");
+				helper.disconnectUser(u);
+			}
+	}
+	
+	 boolean checkCredentials(String name, String pass)
+	 {
+	 	boolean result = false;
+	 	
+	 	// Escape quotes on passed data
+	 	name = SmartFoxLib.escapeQuotes(name);
+	 	pass = SmartFoxLib.escapeQuotes(pass);
+	 	String q = "'";
+	 	// SQL statement to execute
+	 	String sql = "SELECT name,login_key,mod_level,ip FROM users WHERE name = " + q + name + q;
+	 	
+	 	// Execute the SQL statement
+	 	ArrayList queryRes = db.executeQuery(sql);
+	 		
+	 	// If record was found exist...
+	 	if (queryRes != null && queryRes.size() > 0)
+	 	{
+	 		result = true;
+	 	}	
+	 		
+	 	return result;
+	 }
+	
+	public void handleInternalEvent(InternalEventObject evt)
+	{
+		 String evtName = evt.getEventName();
+
+		 
+		if(evtName.equals("loginRequest"))
+		{
+			
+			boolean ok = false;
+			User newUser = null;
+			
+			ActionscriptObject res = new ActionscriptObject();
+			String nick = evt.getParam("nick");
+			String pass = evt.getParam("pass");
+			
+			SocketChannel chan = (SocketChannel) evt.getObject("chan");
+			
+			ok = checkCredentials(nick, pass);
+			
+			if (ok)
+			{
+				try
+				{
+					Zone z0n3 = helper.getZone(this.getOwnerZone());
+					String currentZone = z0n3.getName();
+					
+					newUser = helper.canLogin(nick, pass, chan, currentZone);
+					//newUser = helper.canLogin(nick, pass, chan, currentZone);
+					res.put("_cmd", "logOK");
+					res.put("id", String.valueOf(newUser.getUserId()));
+					res.put("name", newUser.getName());
+
+					ok = true;
+				}
+				
+				catch (LoginException le)
+				{
+					this.trace("Could not login user: " + nick);
+
+					res.put("_cmd", "logKO");
+					res.put("err", le.getMessage());
+				}
+			}
+			else
+			{
+				res.put("_cmd", "logKO");
+				res.put("err", "Sorry, invalid credentials.");
+			}
+			LinkedList ll = new LinkedList();
+			ll.add(chan);
+
+			sendResponse(res, -1, null, ll);
+			if (ok)
+				helper.sendRoomList(chan);
+		}
+		
+		
+		
+			
+				}
+			
+			
+			
+			/*String nick = evt.getParam("nick");
+            String pass = evt.getParam("pass");
+            
+            
+            SocketChannel chan = (SocketChannel) evt.getObject("chan");
+            
+
+            String q = "'";
+            ArrayList dbQuery = db.executeQuery("SELECT * FROM users WHERE name = " + q + nick + q);
+            
+            
+           
+           */
+           
+            
+           
+		
+            
+          /*  if(dbQuery.size() == 1){
+            	if(dbQuery.get(0) instanceof DataRow){
+            		DataRow dr = (DataRow)dbQuery.get(0);
+            		String password = dr.getItem("");
+            	}*/
+            	
+            	
+            
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/**
+	 * * * * * * * * * * * * * * * * * * * *
+	 * * DO NOT TOUCH THESE FUNCTIONS
+	 * * * * * * * * * * * * * * * * * * * *
+	 */
+	public void handleRequest(String cmd, JSONObject params, User serverUser, int fromRoom)
+	{
+	}
+	
+	public void handleRequest(String cmd, String params[], User serverUser, int fromRoom)
+	{
+	}
+
+	
+	public Object handleInternalRequest(Object param)
+	{
+		return param;
+	}
+	
+
+}

@@ -1,0 +1,53 @@
+package mylife;
+import java.nio.channels.SocketChannel;
+import java.util.*;
+
+import it.gotoandplay.smartfoxserver.db.*;
+import it.gotoandplay.smartfoxserver.data.*;
+import it.gotoandplay.smartfoxserver.exceptions.*;
+import it.gotoandplay.smartfoxserver.extensions.*;
+import it.gotoandplay.smartfoxserver.lib.ActionscriptObject;
+import it.gotoandplay.smartfoxserver.events.InternalEventObject;
+
+import org.json.JSONObject; 
+
+public class Mylife extends AbstractExtension
+{
+
+	public void init()
+	{
+		trace("Mylife.java Extension initialized");	
+	}
+
+	public void destroy()
+	{
+		trace("Extension destroyed");
+	}
+
+	public void handleRequest(String cmd, ActionscriptObject ao, User u, int fromRoom)
+	{
+		// Your code here, handles XML-based requests
+	}
+	
+	public void handleRequest(String cmd, JSONObject jso, User u, int fromRoom)
+	{
+		// Your code here, handles JSON-based requests
+	}
+	
+	public void handleRequest(String cmd, String params[], User u, int fromRoom)
+	{
+		// Your code here, handles String-based requests
+	}
+
+	public void handleInternalEvent(InternalEventObject ieo)
+	{
+		// Your code here, handles server events
+	}
+	
+	public Object handleInternalRequest(Object param)
+	{
+		return param;
+		// (Optional) Your code here, handles an internal request
+	}
+	
+}

@@ -1,0 +1,72 @@
+package mylife;
+import java.nio.channels.SocketChannel;
+import java.util.*;
+
+import it.gotoandplay.smartfoxserver.db.*;
+import it.gotoandplay.smartfoxserver.data.*;
+import it.gotoandplay.smartfoxserver.exceptions.*;
+import it.gotoandplay.smartfoxserver.extensions.*;
+import it.gotoandplay.smartfoxserver.lib.ActionscriptObject;
+import it.gotoandplay.smartfoxserver.events.InternalEventObject;
+
+import org.json.JSONException;
+import org.json.JSONObject; 
+
+public class Mylife extends AbstractExtension
+{
+
+	public void init()
+	{
+		trace("Mylife.java Extension initialized");	
+	}
+
+	public void destroy()
+	{
+		trace("Extension destroyed");
+	}
+
+	public void handleRequest(String cmd, ActionscriptObject ao, User u, int fromRoom)
+	{
+		// Your code here, handles XML-based requests
+	}
+	
+	public void handleRequest(String cmd, JSONObject params, User serverUser, int fromRoom)
+	{
+		processRequest(cmd, params, serverUser, fromRoom);// Your code here, handles JSON-based requests
+	}
+	
+	public void handleRequest(String cmd, String params[], User serverUser, int fromRoom)
+	{
+		//?////////////processRequest(cmd, params, serverUser, fromRoom);// Your code here, handles String-based requests
+	}
+
+	public void handleInternalEvent(InternalEventObject ieo)
+	{
+		// Your code here, handles server events
+	}
+	
+	public Object handleInternalRequest(Object param)
+	{
+		return param;
+		// (Optional) Your code here, handles an internal request
+	}
+	
+	
+	private void processRequest(String cmd, JSONObject params, User serverUser, int fromRoom) 
+	{
+		if (cmd.equals("getUType")) 
+		{
+			JSONObject obj = new JSONObject();
+			try {
+				obj.put("type", "regular");
+			} catch (JSONException e) {
+				trace("\n\nException in getUType\n\n");
+				e.printStackTrace();
+			}
+			
+			sendResponse(obj, fromRoom, serverUser, null);
+		
+		}
+	
+	}
+}

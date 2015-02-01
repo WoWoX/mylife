@@ -1,0 +1,299 @@
+package mylife;
+import java.nio.channels.SocketChannel;
+import java.util.*;
+
+import it.gotoandplay.smartfoxserver.db.*;
+import it.gotoandplay.smartfoxserver.data.*;
+import it.gotoandplay.smartfoxserver.exceptions.*;
+import it.gotoandplay.smartfoxserver.extensions.*;
+import it.gotoandplay.smartfoxserver.lib.ActionscriptObject;
+import it.gotoandplay.smartfoxserver.lib.SmartFoxLib;
+import it.gotoandplay.smartfoxserver.events.*;
+import it.gotoandplay.smartfoxserver.lib.ActionscriptObject;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+
+public class Mylife extends AbstractExtension {
+	
+	private static final ExtensionHelper helper = ExtensionHelper.instance();
+	private static DbManager db = null;
+	private static Zone currZone = null;
+
+	
+	
+	public void out(String text)
+	{
+		System.out.println(text);
+	}
+	
+	
+	
+	public void init() {
+		
+		trace("Mylife.java Extension initialized");
+		
+		ExtensionHelper helper = ExtensionHelper.instance();
+		
+		Zone currZone = helper.getZone(this.getOwnerZone());
+		
+		db = currZone.dbManager;
+	}
+	
+	
+	public void destroy() {
+		
+		trace("Extension destroyed");
+		
+		db = null;
+		
+	}
+	
+	/** VERIFY A USER'S MOD LEVEL BEFORE PERFORMING MODERATOR ACTION **/
+	 boolean checkIsMod(String name)
+	{
+		String sql = "SELECT mod_level FROM users WHERE name = " + name ;
+	
+		ArrayList queryRes = db.executeQuery(sql);
+		
+		DataRow dr = (DataRow) queryRes.get(0);
+		
+		Boolean isMod = false;
+		
+		if(dr.getItem("mod_level").equals("100"))
+		{
+			 isMod = true;
+		}
+		else if(dr.getItem("mod_level").equals("200"))
+		{
+			 isMod = true;
+		}
+				
+		return isMod;
+		
+	}
+	 
+	 /** CHECK IF A USER IS BANNED OR NOT **/
+	 boolean checkIsBanned(String name)
+	 {
+		Boolean isBanned = false;
+		String q = "'";
+		String sql = "SELECT is_banned FROM users WHERE name = " + q + name + q;
+		
+		ArrayList queryRes = db.executeQuery(sql);
+		
+		DataRow dr = (DataRow) queryRes.get(0);
+		
+		if(dr.getItem("is_banned").equals("1"))
+		{
+			isBanned = true;
+		}
+			
+		return isBanned;
+	 }
+	 
+	 /** PERMANENTLY BAN A PLAYER FROM THE GAME**/
+	 public void banUser(String name, String reason, String by)
+	 {
+		 String q = "'";
+		 
+		 String query1 = "UPDATE users SET is_banned = 1 WHERE name = " + name;
+		 String query2 = "UPDATE users SET reason = " + q + reason + q + "WHERE name = " + name;
+		 String query3 = "UPDATE users SET banned_by = " + q + by + q + "WHERE name = " + name;
+		 
+		 db.executeCommand(query1);
+		 db.executeCommand(query2);
+		 db.executeCommand(query3);
+		 
+		 out("User " + q + name + q + " has been banned by " + q + by + q + ". Reason: " + q + reason + q + ".");
+	 }
+	
+	public void handleRequest(String cmd, ActionscriptObject ao, User u, int fromRoom) {
+		
+		trace("\n***A request has been issued to Mylife by user: " + u.getName() + "***\n");
+		
+		if (cmd.equals("outputUserInfo")) {
+			trace("\n----------\nInformation being outputted for user: " + u.getUserId() + "\nIP address: " + u.getIpAddress() + "\nName: " + u.getName() + "\nRoom:" + u.getRoom() + "\n----------\n");
+			
+		/**CHECK LEVEL FUNCTION NEEDS CONSTRUCTION
+		 * IT IS CHECKING THE USER REQUESTING AND
+		 * IT SHOULD BE CHECKING A SPECIFIED USER
+		 */
+			/*} else if (cmd.equals("checkLevel")) {
+		 
+			
+			trace("\ncheckLevel invoked - ModStatus for " + u.getName() + " : " + u.isModerator());
+			*/
+			
+		} else if (cmd.equals("banUser")) {
+		
+			String name = u.getName();
+			String reason = ao.getString("reason");
+			String toban = ao.getString("toban");
+			
+			Boolean doBan = checkIsMod(name);
+			
+			if(doBan)
+			{
+				banUser(toban, reason, name);
+			}
+			else
+			{
+				out("Non-moderator attempted to ban a user: " + name);
+				helper.kickUser(u, 30, "Nice try! You have been kicked from the server.");
+			}
+			
+		} else {
+			trace("\n\n**Error: Mylife requested with unknown command: " + cmd);
+			
+			trace("\n**User " + u.getName() + " is being disconnected for invalid command request.");
+			
+			helper.disconnectUser(u);
+		}
+	}
+	
+	
+	boolean checkCredentials(String name, String pass) {
+		
+		boolean result = false;
+		
+		name = SmartFoxLib.escapeQuotes(name);
+		pass = SmartFoxLib.escapeQuotes(pass);
+		
+		String q = "'";
+		String sql = "SELECT name,login_key,mod_level,ip FROM users WHERE name = " + q + name + q;
+		
+		ArrayList queryRes = db.executeQuery(sql);
+		
+		if (queryRes != null && queryRes.size() > 0) {
+			
+			DataRow dr = (DataRow) queryRes.get(0);
+			
+			String lk = dr.getItem("login_key");
+			if (lk.equals(pass)) {
+				result = true;
+			}
+		}
+		return result;
+	}
+	
+	
+	public void handleInternalEvent(InternalEventObject evt) {
+		
+		String evtName = evt.getEventName();
+		
+		if (evtName.equals("loginRequest")) {
+			
+			String quote  = "'";
+			String nick = evt.getParam("nick");
+			String pass = evt.getParam("pass");
+
+			Boolean userIsBanned = checkIsBanned(nick);
+			
+			//query user info
+			String userinfo = "SELECT name,login_key,mod_level,ip,cash,money,firsttime,is_banned,banreason FROM users WHERE name = " + quote + nick + quote;
+			
+			ArrayList userRes = db.executeQuery(userinfo);
+			DataRow dr = (DataRow) userRes.get(0);
+			
+			//set user info to pass to swf
+			String cash = dr.getItem("cash");
+			String money = dr.getItem("money");
+			String mod_level = dr.getItem("mod_level");
+			String firsttime = dr.getItem("firsttime");
+			
+			boolean ok = false;
+			
+			User newUser = null;
+			
+			ActionscriptObject res = new ActionscriptObject();
+			
+			SocketChannel chan = (SocketChannel) evt.getObject("chan");
+			
+			ok = checkCredentials(nick, pass);
+			
+			if(userIsBanned)
+			{
+				ok = false;
+				
+			}
+			
+			if (ok) {
+				
+				try {
+					
+					Zone z0n3 = helper.getZone(this.getOwnerZone());
+					String currentZone = z0n3.getName();
+					
+					newUser = helper.canLogin(nick, pass, chan, currentZone);
+					
+				/** USER VARS ARE NOW SET ON CLIENT SIDE 
+					
+				*	HashMap<String, String> vars = new HashMap<String, String>();
+				*	vars.put("firsttime", firsttime);
+				*	helper.setUserVariables(newUser, vars, true);
+				*
+				**/
+					
+					
+					//if user is new, set firsttime to 0
+					if(firsttime.equals("1"))
+					{
+						out("New user joining: " + newUser.getName());
+						String query = "UPDATE users SET firsttime = 0 WHERE name = " + quote + nick + quote;
+						db.executeCommand(query);
+					}
+					
+					//check users mod_level and either make them moderator or administrator
+					if(mod_level.equals("100"))
+					{
+						out("Moderator logging in: " + newUser.getName());
+						newUser.setAsModerator();
+					}
+					else if(mod_level.equals("200"))
+					{
+						out("Administrator logging in: " + newUser.getName());
+						newUser.setAsAdmin();
+					}
+					
+					res.put("_cmd", "logOK");
+					res.put("id", String.valueOf(newUser.getUserId()));
+					res.put("name", newUser.getName());
+					res.put("cash", cash);
+					res.put("money", money);
+					res.put("mod_level", mod_level);
+					res.put("firsttime", firsttime);
+					
+					ok = true;
+					
+				} catch (LoginException le) {
+					this.trace("Could not login user: " + nick);
+					res.put("_cmd", "logKO");
+					res.put("err", le.getMessage());
+				}
+				
+			} else {
+				
+				res.put("_cmd", "logKO");
+				res.put("err", "Authentication failed");
+				
+			}
+			
+			LinkedList ll = new LinkedList();
+			
+			ll.add(chan);
+			
+			sendResponse(res, -1, null, ll);
+			if (ok) 
+				helper.sendRoomList(chan);
+		}
+	}
+	
+	
+	public void handleRequest(String cmd, JSONObject params, User serverUser, int fromRoom) {}
+	public void handleRequest(String cmd, String params[], User serverUser, int fromRoom) {}
+	public Object handleInternalRequest(Object param) {
+		return param;
+	}
+}

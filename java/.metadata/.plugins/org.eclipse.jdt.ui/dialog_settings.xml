@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="C:\Users\WoWoX~\mylife\SmartFoxServer_2X\SFS2X\lib" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="C:\Users\WoWoX~\mylife\SmartFoxServerPRO_1.6.6\Server\lib" key="org.eclipse.jdt.ui.lastextjar"/>
 	<item value="jre6" key="org.eclipse.jdt.ui.last.selected.project.jre"/>
 	<item value="1" key="org.eclipse.jdt.ui.last.selected.jre.kind2"/>
 	<section name="OptionalMessageDialog.hide.">
@@ -28,7 +28,7 @@
 		<item value="false" key="JarPackageWizardPage.OVERWRITE"/>
 		<item value="true" key="jarOptionsWizardPage.EXPORT_ERRORS"/>
 		<item value="true" key="JarPackageWizardPage.EXPORT_CLASS_FILES"/>
-		<item value="true" key="jarOptionsWizardPage.SAVE_DESCRIPTION"/>
+		<item value="false" key="jarOptionsWizardPage.SAVE_DESCRIPTION"/>
 		<item value="false" key="JarManifestWizardPage.SAVE_MANIFEST"/>
 		<item value="false" key="JarPackageWizardPage.EXPORT_JAVA_FILES"/>
 		<item value="false" key="JarPackageWizardPage.EXPORT_OUTPUT_FOLDER"/>
@@ -37,6 +37,7 @@
 		<item value="false" key="jarOptionsWizardPage.STORE_USE_SRC_FOLDERS"/>
 		<item value="/mylife/mylife.jardesc" key="jarOptionsWizardPage.DESCRIPTION_LOCATION"/>
 		<list key="JarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="C:\Users\WoWoX~\Desktop\mylife\mylife.jar"/>
 			<item value="C:\Users\WoWoX~\mylife\SmartFoxServer_2X\SFS2X\extensions\mylife\MylifeExtension.jar"/>
 		</list>
 	</section>
@@ -45,5 +46,8 @@
 	<section name="NewClassWizardPage">
 		<item value="false" key="create_constructor"/>
 		<item value="true" key="create_unimplemented"/>
+	</section>
+	<section name="ClasspathContainerSelectionPage">
+		<item value="0" key="index"/>
 	</section>
 </section>
